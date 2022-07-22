@@ -1,5 +1,27 @@
-.main_root {
+.mainRoot {
   background-color: #74992e;
-  width: 60%;
+  width: 65%;
   height: 100%;
+}
+
+.mainHeader {
+  display: grid;
+  background-color: orange;
+  height: 5%;
+  grid-template-columns: 60% 40%;
+}
+.mainBody{
+  height:95%; 
+  width: 100%;
+  background-color: green;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+.mainBodyLeft {
+  display: grid;
+  grid-template-rows: 20% 80%;
+}
+.mainBodyRight {
+  display: grid; 
+  grid-template-rows: 20% 40% 40%;
 }
