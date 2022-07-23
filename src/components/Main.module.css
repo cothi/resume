@@ -1,6 +1,4 @@
-
 .mainRoot {
-  background-color: #74992e;
   width: 65%;
   height: 100%;
 }
@@ -9,22 +7,47 @@
   display: grid;
   background-color: #fff;
   height: 5%;
+  width: 100%;
   grid-template-columns: 60% 40%;
 }
 .mainBody{
-  height:95%; 
+  background-color: #fff;
   width: 100%;
-  background-color: green;
+  height:95%; 
   display: grid;
   grid-template-columns: 60% 40%;
 }
 .mainBodyLeft {
+  padding: 12% 6% 0 8%;
   display: grid;
-  grid-template-rows: 20% 80%;
+  grid-template-rows: 15% 85%;
 }
 .mainBodyRight {
   display: grid; 
   grid-template-rows: 20% 40% 40%;
+}
+
+.mainBodyHeader {
+
+}
+
+
+.mainHeaderTitle {
+  color: #7C99FF;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 21px;
+}
+
+.mainHeaderContent {
+  font-weight: 700;
+  font-size: 14px;
+  padding: 5% 0 5% 0;
+}
+
+.mainLine {
+  height: 0;
+  border: 8px solid #7C99FF;
 }
 
 .linkContainer {
@@ -32,10 +55,10 @@
   height: 100%;
   vertical-align: middle;
   align-items: center;
+  justify-content: space-around;
 }
 
 .linkStyle {
-  padding: 5%;
   text-decoration: none;
   color: inherit;
 }

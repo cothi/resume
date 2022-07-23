@@ -23,7 +23,6 @@ export default function Main() {
         <Route exact path="/projects" element={
           <Projects />
         } />
-
       </Routes>
     </div>
   );

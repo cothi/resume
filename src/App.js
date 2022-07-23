@@ -8,7 +8,7 @@ function App() {
   const [isMobile, setIsMobile] = useState(false);
 
   const handleResize = () => {
-    if (window.innerWidth < 720) {
+    if (window.innerWidth < 920) {
       setIsMobile(true);
     } else {
       setIsMobile(false);
