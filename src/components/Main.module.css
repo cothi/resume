@@ -1,3 +1,4 @@
+
 .mainRoot {
   background-color: #74992e;
   width: 65%;
@@ -6,7 +7,7 @@
 
 .mainHeader {
   display: grid;
-  background-color: orange;
+  background-color: #fff;
   height: 5%;
   grid-template-columns: 60% 40%;
 }
@@ -25,3 +26,17 @@
   display: grid; 
   grid-template-rows: 20% 40% 40%;
 }
+
+.linkContainer {
+  display: flex;
+  height: 100%;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.linkStyle {
+  padding: 5%;
+  text-decoration: none;
+  color: inherit;
+}
+

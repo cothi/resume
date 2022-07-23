@@ -1,5 +1,7 @@
 import styles from "./Main.module.css"
 import Header from "./Header"
+import About from './About'
+import Projects from './Projects'
 import { Route, Routes } from "react-router-dom";
 
 export default function Main() {
@@ -15,33 +17,11 @@ export default function Main() {
 
       <Routes>
         <Route exact path="/" element={
+          <About />
 
-          <div className={styles.mainBody}>
-            <div className={styles.mainBodyLeft}>
-              <div className={styles.mainBodyHeader}>
-                a
-              </div>
-              <div className={styles.mainBodyTimeLine}>
-                b
-              </div>
-            </div>
-            <div className={styles.mainBodyRight}>
-              <div className={styles.mainBodyProfile}>
-                c
-              </div>
-              <div className={styles.mainTeckInterest}>
-                d
-              </div>
-              <div className={styles.mainBodyStack}>
-                e
-              </div>
-            </div>
-          </div>
         } />
         <Route exact path="/projects" element={
-          <div className={styles.mainBody}>
-            project
-          </div>
+          <Projects />
         } />
 
       </Routes>
