@@ -18,8 +18,22 @@ export default function About() {
           <div className={styles.mainHeaderTitle}>
             TimeLine
           </div>
-          <div>
-            Freelancer
+          <div className={styles.mainTimeBody}>
+            <div className={styles.test}>
+              Freelancer
+            </div>
+            <div >
+              Award
+            </div>
+            <div >
+              Certificate
+            </div>
+            <div >
+              Education
+            </div>
+            <div >
+              Interesting
+            </div>
           </div>
         </div>
 

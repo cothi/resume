@@ -12,12 +12,12 @@ export default function Sidebar() {
             className={styles.sidebarProfileImg}
           />
         </div>
-        <div className={styles.sidebarPosition}>
+        <div className={styles.sidebarPosition} >
           blockchain developer
         </div>
         <div className={styles.sidebarIconBox}>
-          <Icon icon="fa6-brands:github-square" color="#000" className={styles.sidebarIcon} />
-          <Icon icon="fluent:mail-24-filled" color="#111" className={styles.sidebarIcon2} />
+          <Icon icon="fa6-brands:github-square" color="#fff" className={styles.sidebarIcon} />
+          <Icon icon="fluent:mail-24-filled" color="#fff" className={styles.sidebarIcon2} />
         </div>
       </div>
     </div>

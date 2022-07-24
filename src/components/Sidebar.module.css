@@ -2,10 +2,11 @@
 .sidebarRoot {
   background-color: #628EFF;
   height: 100%;
-  width: 20%;
+  width: 23%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .sidebarCore {
   height: 60%;
@@ -16,10 +17,6 @@
   align-items: center;
 }
 
-.sidebarPostion {
-  font-family: 'Kanit';
-  font-weight: 300;
-}
 
 
 .sidebarProfileContainer {
@@ -35,10 +32,11 @@
   border-radius: 40%;
 }
 
+
 .sidebarPosition {
-  height: 10%;
-  padding: 10% 0 0 0;
   color: #fff;
+  padding: 10%;
+  font-weight: 700;
 }
 
 

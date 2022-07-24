@@ -18,7 +18,6 @@ export default function Main() {
       <Routes>
         <Route exact path="/" element={
           <About />
-
         } />
         <Route exact path="/projects" element={
           <Projects />
