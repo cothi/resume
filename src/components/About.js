@@ -1,4 +1,5 @@
 import styles from './Main.module.css'
+import Timeline from "./Timeline"
 
 export default function About() {
   return (
@@ -19,21 +20,7 @@ export default function About() {
             TimeLine
           </div>
           <div className={styles.mainTimeBody}>
-            <div className={styles.test}>
-              Freelancer
-            </div>
-            <div >
-              Award
-            </div>
-            <div >
-              Certificate
-            </div>
-            <div >
-              Education
-            </div>
-            <div >
-              Interesting
-            </div>
+            <Timeline />
           </div>
         </div>
 

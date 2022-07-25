@@ -1,0 +1,22 @@
+.ContentDivider {
+  display: grid;
+  height: 40%;
+  grid-template-columns: 15% 5% 80%;
+}
+
+.Divider {
+  width: 0;
+  border-right: 1px solid black;
+  padding: 0 10% 0 20%;
+}
+
+.Divider::after {
+  border-radius: 20px;
+
+  content: ' ';
+  background-color: #000;
+  box-shadow: 5px  5px 5px 5px rgba(150, 198, 255, 0.25);
+}
+
+.ContentLeft {
+}
