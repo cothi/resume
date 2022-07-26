@@ -43,8 +43,9 @@
   grid-template-rows: 7% 95%;
 }
 .mainBodyRight {
+  padding: 12% 2% 0 8%;
   display: grid; 
-  grid-template-rows: 20% 40% 40%;
+  grid-template-rows: 4% 13% 70%;
 }
 
 
@@ -59,6 +60,15 @@
   justify-content: space-between;
 }
 
+
+.mainBodyProfile {
+  border-bottom: 16px solid #7C99FF;
+}
+
+
+.mainTechInterest{
+  border-bottom: 16px solid #7C99FF;
+}
 
 
 

@@ -1,5 +1,7 @@
 import styles from './Main.module.css'
 import Timeline from "./Timeline"
+import Profile from './Profile'
+import TechRank from "./TechRank"
 
 export default function About() {
   return (
@@ -27,10 +29,10 @@ export default function About() {
       </div>
       <div className={styles.mainBodyRight}>
         <div className={styles.mainBodyProfile}>
-          c
+          <Profile />
         </div>
-        <div className={styles.mainTeckInterest}>
-          d
+        <div className={styles.mainTechInterest}>
+          <TechRank />
         </div>
         <div className={styles.mainBodyStack}>
           e
