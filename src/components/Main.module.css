@@ -10,39 +10,6 @@
   width: 100%;
   grid-template-columns: 60% 40%;
 }
-.mainBody{
-  background-color: #fff;
-  width: 100%;
-  height:95%; 
-  display: grid;
-  grid-template-columns: 60% 40%;
-  overflow-y: scroll;
-}
-.mainBodyLeft {
-  padding: 12% 6% 0 8%;
-  display: grid;
-  grid-template-rows: 15% 85%;
-}
-.mainBodyRight {
-  display: grid; 
-  grid-template-rows: 20% 40% 40%;
-}
-
-
-.mainBodyTimeLine {
-  display: grid;
-  grid-template-rows: 5% 95%;
-}
-
-.mainTimeBody {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.test {
-  height: 2000px;
-}
-
 .mainHeaderTitle {
   color: #7C99FF;
   font-weight: 700;
@@ -53,8 +20,47 @@
 .mainHeaderContent {
   font-weight: 700;
   font-size: 14px;
-  padding: 5% 0 10% 0;
 }
+
+.mainBodyHeader {
+  display: grid;
+  grid-template-rows: 20% 50% 20%;
+
+}
+
+
+.mainBody{
+  background-color: #fff;
+  width: 100%;
+  height:95%; 
+  display: grid;
+  grid-template-columns: 55% 45%;
+  overflow-y: scroll;
+}
+.mainBodyLeft {
+  padding: 12% 4% 0 8%;
+  display: grid;
+  grid-template-rows: 7% 95%;
+}
+.mainBodyRight {
+  display: grid; 
+  grid-template-rows: 20% 40% 40%;
+}
+
+
+.mainBodyTimeLine {
+  display: grid;
+  grid-template-rows: 2% 98%;
+}
+
+.mainTimeBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
 
 .mainLine {
   height: 0;

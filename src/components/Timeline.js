@@ -1,58 +1,37 @@
 import styles from "./Timeline.module.css"
+import TimelineDiv from "./TimelineDiv"
+import { freelancer, award, certificates, education, interesting } from "../data/data"
 
 export default function Timeline() {
-  const freelancer = [
-    {
-      date: "2021.06",
-      order: "** 학원",
-      subject: "학생 관리 프로그램",
-      detail: "학생 데이터를 엑셀로 수기로 작성 후,  학생 데이터를 pdf 형태로 자동으로 변환하여 출력을 진행"
-    },
-    {
-      date: "2021.05",
-      order: "** 쇼핑몰",
-      subject: "google docs api, 자동 데이터 입력",
-      detail: "수기로 발주받은 데이터를 구글 문서에 대입 시키는 작업을api 화를 자동화",
-    },
-    {
-      date: "2021.05",
-      order: "** 쇼핑몰",
-      subject: "google apps script에 대해서 데이터를 취통합을 필요한 애플리케이션 개발",
-      detail: "수기로 작성한 물품 데이터를 전체 데이터에 자동 수정하는 작업 자동화"
-    },
-    {
-      date: "2022.06",
-      order: "** 학원",
-      subject: "학생 관리 프로그램 보수 및 데이터 라벨 추가",
-    }
-  ]
-
   return (
-    <div>
-      {
-        freelancer.map(v => (
-          <div className={styles.ContentDivider}>
-            <div className={styles.ContentLeft}>
-              <div>
-                {v.date}
-              </div>
-              <div>
-                {v.order}
-              </div>
-            </div>
-            <div className={styles.Divider}>
-            </div>
-            <div>
-              <div>
-                {v.subject}
-              </div>
-              <div>
-                {v.detail}
-              </div>
-            </div>
-          </div>
-        ))
-      }
-    </div>
+    <>
+      <div className={styles.TimelineTitle}>
+        Freelancer
+      </div>
+      <TimelineDiv props={freelancer} />
+      <div className={styles.TimelineTitle}>
+        Award
+      </div>
+      <TimelineDiv props={award} />
+      <div className={styles.TimelineTitle}>
+        Certificate
+      </div>
+
+      <TimelineDiv props={certificates} />
+
+      <div className={styles.TimelineTitle}>
+        Education
+      </div>
+
+      <TimelineDiv props={education} />
+
+      <div className={styles.TimelineTitle}>
+        interesting
+      </div>
+      <div className={styles.TimelineSubtitle}>
+        마라톤 경기에서는 가장 먼저 골인 지점을 통과하는 것보다, 자신만의 레이스를 ‘어떻게 운용했는지’가 마라토너들에겐 더 중요하다고 합니다. 특별한 순간을 위해서는 지루한 시기도 보내기도 하고, 좀 더 멀리 좀 더 빨리 가기 위해 때를 기다려야 하기도 합니다. 변치 않는 삶의 목표와 완주하겠다는 열정만 잊지 않는다면, 기나긴 인생 마라톤에서 분명 환히 웃으며 목표를 가질 수 있다고 믿습니다.
+      </div>
+      <TimelineDiv props={interesting} />
+    </ >
   )
 }
