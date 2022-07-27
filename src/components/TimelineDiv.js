@@ -2,13 +2,15 @@ import styles from "./Timeline.module.css"
 
 
 export default function TimelineDiv(props) {
-  console.log(props.props);
 
+  console.log(props.props);
+  var id = 0
   return (
     <>
       {
-        props.props.map(v => (
-          <div className={styles.ContentDivider}>
+        props.props.map((v) => (
+
+          <div className={styles.ContentDivider} key={id++}>
             <div className={styles.ContentLeft}>
               <div className={styles.Title}>
                 {v.date}

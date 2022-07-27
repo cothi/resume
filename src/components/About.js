@@ -1,7 +1,7 @@
 import styles from './Main.module.css'
 import Timeline from "./Timeline"
 import Profile from './Profile'
-import TechRank from "./TechRank"
+import TechRank from "../containers/TechRank"
 
 export default function About() {
   return (
