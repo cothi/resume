@@ -1,6 +1,5 @@
-import axios from "axios"
-import { useState } from "react"
-import SetRank from "../containers/SetRank"
+
+import Gauge from "./Gauge"
 
 export default function TechRank({ git }) {
 
@@ -8,9 +7,11 @@ export default function TechRank({ git }) {
   console.log("git, ", git)
 
 
+
+
   return (
     <>
-      <SetRank />
+      <Gauge />
     </>
   )
 }

@@ -18,9 +18,9 @@ import { GIT_LANG } from "../actions/actionTypes"
 
 
 const pro = (state, action) => {
-  console.log(action.type);
   switch (action.type) {
     case GIT_LANG:
+      console.log("Action", action)
       return {
         text: action.text,
         completed: false
@@ -31,13 +31,12 @@ const pro = (state, action) => {
 }
 
 const pros = (state = [], action) => {
-  console.log(state);
+  console.log(GIT_LANG);
   switch (action.type) {
     case GIT_LANG:
       return [
-        pro(undefined, action)
+        action
       ]
-
     default:
       return state
   }
