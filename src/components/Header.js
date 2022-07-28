@@ -6,10 +6,7 @@ export default function Header() {
     <div className={styles.linkContainer}>
       <Link className={styles.linkStyle} to="/"> About </Link>
       <Link className={styles.linkStyle} to="/projects"> Projects </Link>
-      <div>
-      </div>
-      <div>
-      </div>
+
     </div>
   );
 }

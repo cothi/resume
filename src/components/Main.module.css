@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Poppins:wght@500&display=swap');
 .mainRoot {
   width: 70%;
   height: 100%;
@@ -25,12 +26,13 @@
 .mainHeaderContent {
   font-weight: 700;
   font-size: 14px;
+  padding: 5% 0 5% 0;
 }
 
 .mainBodyHeader {
   display: grid;
-  grid-template-rows: 20% 40% 30%;
-
+  grid-template-rows: 20% 40%;
+  border-bottom: 16px solid #7C99FF;
 }
 
 
@@ -42,7 +44,10 @@
   grid-template-columns: 55% 45%;
   overflow-y: scroll;
 }
-
+.mainBodyMobileHeader{
+  padding: 0 0 10% 0;
+  border-bottom: 16px solid #7C99FF;
+}
 .mainMobileBody {
   background-color: #fff;
   width: 100%;
@@ -56,8 +61,24 @@
 .mainBodyLeft {
   padding: 12% 4% 8% 4%;
   display: grid;
-  grid-template-rows: 7% 95%;
+  grid-template-rows: 5% 95%;
 }
+
+.mainMobileBodyLeft {
+  padding: 12% 4% 8% 4%;
+  display: grid;
+  grid-template-rows: 10% 90%;
+}
+
+
+.mainBodyMobileRight {
+  padding: 12% 3% 0 4%;
+  /* display: grid;  */
+  /* grid-template-rows: 4% 13% 70%; */
+  display: flex;
+  flex-direction: column;
+}
+
 .mainBodyRight {
   height: 100%;
   padding: 12% 3% 0 4%;
@@ -69,6 +90,8 @@
 
 
 .mainBodyTimeLine {
+
+  padding: 12% 0 0 0;
   display: grid;
   grid-template-rows: 1% 99%;
 }
@@ -93,7 +116,9 @@
 .mainBodyStack{
   padding: 10% 0 10% 0;
 }
-
+.mainBodyMobileStack {
+  border-bottom: 16px solid #7C99FF;
+}
 
 .mainLine {
   height: 0;
@@ -105,10 +130,14 @@
   height: 100%;
   vertical-align: middle;
   align-items: center;
-  justify-content: space-around;
+  padding: 0 0 0 4%;
 }
 
 .linkStyle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0 10% 0 0;
   text-decoration: none;
   color: inherit;
 }
