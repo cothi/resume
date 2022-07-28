@@ -1,0 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+.TeckStackContainer {
+  padding: 10% 0 10% 0;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.Stack {
+
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 16px;
+  padding: 1% 2% 1% 2%;
+  margin: 1px;
+  color: #fff;
+  background-color: #7C99FF;
+  border-radius: 20px;
+
+}

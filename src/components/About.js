@@ -2,6 +2,7 @@ import styles from './Main.module.css'
 import Timeline from "./Timeline"
 import Profile from './Profile'
 import TechRank from "../containers/TechRank"
+import TeckStack from "../containers/TechStack"
 import { MOBILE_SIZE } from "../actions/actionTypes"
 
 export default function About({ winSize }) {
@@ -80,8 +81,7 @@ export default function About({ winSize }) {
                 <div className={styles.mainHeaderTitle}>
                   Tech Stack
                 </div>
-                <div>
-                </div>
+                <TeckStack />
               </div>
             </div>
           </>
