@@ -1,3 +1,8 @@
 const GIT_LANG = "GIT_LANG"
+const WIN_SIZE = "WIN_SIZE"
 
-export { GIT_LANG }
+const MOBILE_SIZE = "MOBILE_SIZE"
+const PC_SIZE = "PC_SIZE"
+const TABLET_SIZE = "TABLET_SIZE"
+
+export { GIT_LANG, WIN_SIZE, MOBILE_SIZE, PC_SIZE, TABLET_SIZE }

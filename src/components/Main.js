@@ -1,12 +1,15 @@
 import styles from "./Main.module.css"
 import Header from "./Header"
-import About from './About'
+import About from "../containers/About"
 import Projects from './Projects'
 import { Route, Routes } from "react-router-dom";
+import { PC_SIZE } from "../actions/actionTypes"
 
-export default function Main() {
+export default function Main({ winSize }) {
+
+
   return (
-    <div className={styles.mainRoot}>
+    <div className={winSize.winSize == PC_SIZE ? styles.mainRoot : styles.mainFullRoot}>
       <div className={styles.mainHeader}>
         <div className={styles.mainHeaderItem}>
           <Header />
@@ -26,3 +29,4 @@ export default function Main() {
     </div>
   );
 }
+

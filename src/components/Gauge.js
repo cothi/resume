@@ -1,9 +1,12 @@
+import styles from "./Gauge.module.css"
 
 export default function Gauge() {
 
   return (
     <>
-      h
+      <div className={styles.gaugeContainer}>
+        h
+      </div>
     </>
   )
 }

@@ -1,10 +1,18 @@
 import axios from "axios";
-import { GIT_LANG } from "./actionTypes"
+import { GIT_LANG, WIN_SIZE } from "./actionTypes"
+
+const setWin = (winSize) => {
+  console.log("set", winSize)
+  return {
+    type: WIN_SIZE,
+    winSize
+  };
+};
+
 
 const setLang = (text) => {
-  console.log("tt", text);
   return {
-    type: "GIT_LANG",
+    type: GIT_LANG,
     text
   };
 };
@@ -23,4 +31,5 @@ const getGitInfo = () => {
 
 
 
-export default getGitInfo;
+
+export { getGitInfo, setWin };

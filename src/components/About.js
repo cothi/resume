@@ -2,10 +2,12 @@ import styles from './Main.module.css'
 import Timeline from "./Timeline"
 import Profile from './Profile'
 import TechRank from "../containers/TechRank"
+import { MOBILE_SIZE } from "../actions/actionTypes"
 
-export default function About() {
+export default function About({ winSize }) {
+  console.log("qq", winSize)
   return (
-    <div className={styles.mainBody}>
+    <div className={winSize == MOBILE_SIZE ? styles.mainMobileBody : styles.mainBody}>
       <div className={styles.mainBodyLeft}>
         <div className={styles.mainBodyHeader}>
           <div className={styles.mainHeaderTitle}>

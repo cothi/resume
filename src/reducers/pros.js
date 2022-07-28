@@ -12,9 +12,13 @@ const Stores = (state, action) => {
 
 export default stores */
 
-import { GIT_LANG } from "../actions/actionTypes"
+import { GIT_LANG, WIN_SIZE, TABLET_SIZE } from "../actions/actionTypes"
 
 
+
+const initialState = {
+  winSize: TABLET_SIZE
+}
 
 
 const pro = (state, action) => {
@@ -31,15 +35,27 @@ const pro = (state, action) => {
 }
 
 const pros = (state = [], action) => {
-  console.log(GIT_LANG);
   switch (action.type) {
     case GIT_LANG:
       return [
         action
       ]
+
     default:
       return state
   }
 }
 
-export default pros
+const wins = (state = TABLET_SIZE, action) => {
+  switch (action.type) {
+    case WIN_SIZE:
+      console.log(state);
+      return action.winSize
+
+
+    default:
+      return state
+  }
+}
+
+export { pros, wins }

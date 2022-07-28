@@ -1,8 +1,9 @@
 import { combineReducers } from 'redux'
-import pros from './pros'
+import { pros, wins } from './pros'
 
 const proApp = combineReducers({
   pros,
+  wins
 })
 
 export default proApp

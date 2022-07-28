@@ -1,41 +1,60 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Sidebar from "./components/Sidebar"
-import Main from "./components/Main"
-import getGitInfo from "./actions/index"
+import Main from "./containers/Main"
+import { getGitInfo, setWin } from "./actions/index"
+import { MOBILE_SIZE, PC_SIZE, TABLET_SIZE } from "./actions/actionTypes"
 import styles from "./App.module.css"
-import axios from "axios";
 import { connect } from "react-redux"
 
 
-function App({ dispatch }) {
-  const [isMobile, setIsMobile] = useState(false);
+function App({ dispatch, winSize }) {
 
   const handleResize = () => {
-    if (window.innerWidth < 920) {
-      setIsMobile(true);
+    console.log(window.innerWidth, "width")
+    if (window.innerWidth < 720) {
+      dispatch(setWin(MOBILE_SIZE));
+    } else if (window.innerWidth < 1020) {
+      dispatch(setWin(TABLET_SIZE))
     } else {
-      setIsMobile(false);
+      dispatch(setWin(PC_SIZE));
     }
   }
   useEffect(() => {
     dispatch(getGitInfo());
+    if (window.innerWidth < 620) {
+      dispatch(setWin(MOBILE_SIZE));
+    } else if (window.innerWidth < 920) {
+      dispatch(setWin(TABLET_SIZE))
+    } else {
+      dispatch(setWin(PC_SIZE));
+    }
+
     window.addEventListener("resize", handleResize);
+
   }, [])
 
   return (
     <div className={styles.App}>
       {
-        !isMobile ?
-          <Sidebar />
+        winSize ?
+          <>
+            <Main />
+          </>
           :
-          null
+          <>
+            <Sidebar />
+            < Main />
+          </>
       }
-      <Main />
     </div >
   );
 }
 
+const mapStateToProps = state => ({
+  winSize: state.wins
+})
 
 
 
-export default connect()(App);
+
+export default connect(mapStateToProps)(App);
