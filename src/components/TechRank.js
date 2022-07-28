@@ -13,13 +13,13 @@ export default function TechRank({ git }) {
   }
 
   // 가져온 값
-  console.log("git, ", git.pros)
+  // console.log("git, ", git.pros)
 
   const test = git.pros[0].text;
   var rate = {}
   var calcu = {}
 
-  console.log(test, ",", test.length)
+  // console.log(test, ",", test.length)
 
 
   test.map((v) => {
@@ -33,7 +33,7 @@ export default function TechRank({ git }) {
 
   const sortable = Object.entries(calcu)
   const sorted = sortable.sort((a, b) => {
-    console.log(a, b)
+    // console.log(a, b)
     const aVal = Object.values(a)[1];
     const bVal = Object.values(b)[1];
     return bVal - aVal;
