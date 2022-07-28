@@ -1,0 +1,10 @@
+.TechRankContainer {
+  padding: 4% 0 4% 0;
+  background-color: black;
+}
+.TechRankTitle {
+  color: #7C99FF;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 21px;
+}

@@ -3,7 +3,6 @@ import styles from "./Timeline.module.css"
 
 export default function TimelineDiv(props) {
 
-  console.log(props.props);
   var id = 0
   return (
     <>

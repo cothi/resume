@@ -4,7 +4,7 @@
 }
 
 .mainFullRoot {
-  width: 95%;
+  width: 100%;
   height: 100%;
 }
 
@@ -29,7 +29,7 @@
 
 .mainBodyHeader {
   display: grid;
-  grid-template-rows: 20% 50% 20%;
+  grid-template-rows: 20% 40% 30%;
 
 }
 
@@ -54,20 +54,23 @@
 }
 
 .mainBodyLeft {
-  padding: 12% 4% 0 8%;
+  padding: 12% 4% 8% 4%;
   display: grid;
   grid-template-rows: 7% 95%;
 }
 .mainBodyRight {
-  padding: 12% 2% 0 8%;
-  display: grid; 
-  grid-template-rows: 4% 13% 70%;
+  height: 100%;
+  padding: 12% 3% 0 4%;
+  /* display: grid;  */
+  /* grid-template-rows: 4% 13% 70%; */
+  display: flex;
+  flex-direction: column;
 }
 
 
 .mainBodyTimeLine {
   display: grid;
-  grid-template-rows: 2% 98%;
+  grid-template-rows: 1% 99%;
 }
 
 .mainTimeBody {
@@ -83,9 +86,13 @@
 
 
 .mainTechInterest{
+  padding: 10% 0 10% 0;
   border-bottom: 16px solid #7C99FF;
 }
 
+.mainBodyStack{
+  padding: 10% 0 10% 0;
+}
 
 
 .mainLine {

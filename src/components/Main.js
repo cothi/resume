@@ -7,9 +7,8 @@ import { PC_SIZE } from "../actions/actionTypes"
 
 export default function Main({ winSize }) {
 
-
   return (
-    <div className={winSize.winSize == PC_SIZE ? styles.mainRoot : styles.mainFullRoot}>
+    <div className={winSize == PC_SIZE ? styles.mainRoot : styles.mainFullRoot}>
       <div className={styles.mainHeader}>
         <div className={styles.mainHeaderItem}>
           <Header />
@@ -25,8 +24,7 @@ export default function Main({ winSize }) {
         <Route exact path="/projects" element={
           <Projects />
         } />
-      </Routes>
-    </div>
+      </Routes>    </div>
   );
 }
 

@@ -1,7 +1,7 @@
 import styles from "./Profile.module.css"
 export default function Profile() {
   return (
-    <div>
+    <div className={styles.ProfileDivMain}>
       <div className={styles.ProfileDiv}>
         <div className={styles.ProfileHeader} >
           Name

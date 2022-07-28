@@ -135,13 +135,13 @@ const interesting = [
   {
     date: "2015.5",
     order: "제주특별자치도 주최",
-    subject: "10km 20대 부문 3위",
+    subject: "10km, 20대 부문 3위",
     detail: "제20회 제주국제관광마라톤 입상 상장",
   },
   {
     date: "2016.03",
     order: "제주MBC 국제평화마라톤 사무국",
-    subject: "10km 20대 부문 1위",
+    subject: "42.195km FULL, 20대 부문 1위",
     detail: "제 16회 2016년 mbc 국제평화마라톤 입상 상장"
   },
   {

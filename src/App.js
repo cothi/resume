@@ -10,7 +10,6 @@ import { connect } from "react-redux"
 function App({ dispatch, winSize }) {
 
   const handleResize = () => {
-    console.log(window.innerWidth, "width")
     if (window.innerWidth < 720) {
       dispatch(setWin(MOBILE_SIZE));
     } else if (window.innerWidth < 1020) {
@@ -28,21 +27,19 @@ function App({ dispatch, winSize }) {
     } else {
       dispatch(setWin(PC_SIZE));
     }
-
     window.addEventListener("resize", handleResize);
-
   }, [])
 
   return (
     <div className={styles.App}>
       {
-        winSize ?
+        winSize == PC_SIZE ?
           <>
+            <Sidebar />
             <Main />
           </>
           :
           <>
-            <Sidebar />
             < Main />
           </>
       }
