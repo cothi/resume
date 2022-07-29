@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import React from 'react';
+
 import Sidebar from "./components/Sidebar"
 import Main from "./containers/Main"
 import { getGitInfo, setWin } from "./actions/index"
@@ -7,7 +9,10 @@ import styles from "./App.module.css"
 import { connect } from "react-redux"
 
 
+
+
 function App({ dispatch, winSize }) {
+
 
   const handleResize = () => {
     if (window.innerWidth < 720) {
@@ -32,6 +37,10 @@ function App({ dispatch, winSize }) {
 
   return (
     <div className={styles.App}>
+
+
+
+
       {
         winSize == PC_SIZE ?
           <>

@@ -1,5 +1,5 @@
 import axios from "axios";
-import { GIT_LANG, WIN_SIZE } from "./actionTypes"
+import { GIT_LANG, WIN_SIZE, MODAL_BTN } from "./actionTypes"
 
 const setWin = (winSize) => {
   console.log("set", winSize)
@@ -17,6 +17,13 @@ const setLang = (text) => {
   };
 };
 
+const setModal = (e) => {
+  return {
+    type: MODAL_BTN,
+    open: e
+  };
+}
+
 const getGitInfo = () => {
   return (dispatch) => {
     axios.get("https://api.github.com/users/cothi/repos")
@@ -32,4 +39,4 @@ const getGitInfo = () => {
 
 
 
-export { getGitInfo, setWin };
+export { getGitInfo, setWin, setModal };

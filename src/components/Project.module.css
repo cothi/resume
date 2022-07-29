@@ -2,15 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Poppins:wght@500&display=swap');
 .mainBody {
   padding: 4% 0 0 2%;
-  height: 100%
-}
-
-.ProfileContainer {
+  height: 100%;
   width: 100%;
 }
 
+.ProjectContainer {
+  height: 100%;
+  width: 100%;
+
+  padding: 0 0 10% 0;
+}
+
 .ProjectHeaderTitle {
-  padding: 5% 0 0 2% ;
+  padding: 5% 0 5% 2% ;
   font-family: 'Poppins', sans-serif;
   font-size: 22px;
   font-weight: 600;
@@ -19,7 +23,16 @@
 
 
 .ProjectTableMain {
-  padding: 5% 0;
+  height: 70%;
+  width: 100%;
+  padding: 0 0;
+}
+.ProjectContentMain {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
 }
 
 .ProjectTableHeader {
@@ -29,12 +42,12 @@
   padding: 1%;
   border-radius: 10px 10px 0 0;
   display: grid;
-  grid-template-columns:25% 10% 10% 50% 10%;
+  grid-template-columns:25% 10% 10% 45% 15%;
 }
 
 .ProjectTableContent {
   display: grid;
-  grid-template-columns:25% 10% 10% 50% 10%;
+  grid-template-columns:25% 10% 10% 45% 15%;
 
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
@@ -42,6 +55,7 @@
   padding: 0.8% 0 0.8% 0;
   border-top: 1px solid #CFE8FF;
   border-bottom: 1px solid #CFE8FF;
+  align-items: center;
 }
 
 .ProjectTableContent:hover {
@@ -52,6 +66,7 @@
 
 
 .ProjectInnerText {
+  padding: 0 0 0 2%;
   font-family: 'Poppins', sans-serif;
   word-wrap: break-word;
   font-size: 14px;
@@ -66,3 +81,13 @@
   font-size: 14px;
   font-weight: 500;
 }
+
+.ProjectMore {
+  visibility: hidden;
+}
+.ProjectTableContent:hover > .ProjectMore{
+
+  visibility: visible;
+}
+
+
