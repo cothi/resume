@@ -9,7 +9,6 @@ export default function TeckStack({ git }) {
     )
   }
 
-  console.log("chekcheck", git)
   var teckStackObj = {}
 
   git.text.map((v) => {
@@ -25,13 +24,11 @@ export default function TeckStack({ git }) {
       <div className={styles.Stack}>GO</div>
       {
         Object.keys(teckStackObj).map((item, i) => (
-          <div className={styles.Stack}>
+          <div className={styles.Stack} key={i}>
             {item}
           </div>
-
         ))
       }
-
     </div >
   )
 }

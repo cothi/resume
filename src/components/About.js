@@ -62,7 +62,7 @@ export default function About({ winSize }) {
                   Resume
                 </div>
                 <div className={styles.mainHeaderContent}>
-                  블록체인은 디지털 세상에서 복제할 수 없는 무언가를 만드는 능력은 대체할 수 없는 엄청난 가치를 지닙니다. 이는 데이터 주권을 가질 수 있음을 의미합니다.
+                  디지털 세상에서 복제할 수 없는 무언가를 만드는 능력은 대체할 수 없는 엄청난 가치를 지닙니다. 이는 데이터 주권을 가질 수 있음을 의미합니다.
                 </div>
 
               </div>
