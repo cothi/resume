@@ -18,7 +18,8 @@ export default function Projects({ dispatch, git }) {
       </>
     )
   }
-  console.log(git)
+
+  console.log(git);
 
   const getUrl = async (url) => {
     await axios.get(url)

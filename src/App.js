@@ -12,8 +12,6 @@ import { connect } from "react-redux"
 
 
 function App({ dispatch, winSize }) {
-
-
   const handleResize = () => {
     if (window.innerWidth < 720) {
       dispatch(setWin(MOBILE_SIZE));
@@ -37,10 +35,6 @@ function App({ dispatch, winSize }) {
 
   return (
     <div className={styles.App}>
-
-
-
-
       {
         winSize == PC_SIZE ?
           <>
@@ -59,8 +53,6 @@ function App({ dispatch, winSize }) {
 const mapStateToProps = state => ({
   winSize: state.wins
 })
-
-
 
 
 export default connect(mapStateToProps)(App);

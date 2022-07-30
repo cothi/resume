@@ -1,5 +1,5 @@
 import styles from './Main.module.css'
-import Timeline from "./Timeline"
+import Timeline from "../containers/Timeline"
 import Profile from './Profile'
 import TechRank from "../containers/TechRank"
 import TeckStack from "../containers/TechStack"

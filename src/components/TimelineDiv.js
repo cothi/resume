@@ -1,15 +1,22 @@
 import styles from "./Timeline.module.css"
+import Modal from 'react-modal';
+import timelineData from "../data/data"
+import { setModal } from "../actions/index"
 
 
-export default function TimelineDiv(props) {
 
-  var id = 0
+
+export default function TimelineDiv({ state, dispatch, props }) {
+
+  console.log("Get", props);
+  const data = timelineData[props]
+  console.log(data);
   return (
-    <>
-      {
-        props.props.map((v) => (
+    <div>
 
-          <div className={styles.ContentDivider} key={id++}>
+      {
+        data.map((v, id) => (
+          <div className={styles.ContentDivider} key={id++} onClick={() => dispatch(setModal(true))}>
             <div className={styles.ContentLeft}>
               <div className={styles.Title}>
                 {v.date}
@@ -30,8 +37,7 @@ export default function TimelineDiv(props) {
             </div>
           </div>
         ))
-
       }
-    </>
+    </div>
   )
 }

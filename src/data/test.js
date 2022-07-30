@@ -1,3 +1,4 @@
+
 const timelineData = {
   freelancer: [
     {
@@ -226,4 +227,3 @@ const timelineData = {
     },
   ]
 }
-export default timelineData;

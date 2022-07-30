@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+
+
+
 .TimelineTitle {
   font-family: 'Poppins';
   color: #222222;
@@ -17,6 +20,7 @@
 }
 
 .ContentDivider {
+  cursor: pointer;
   display: grid;
   height: 140px;
   grid-template-columns: 20% 0% 80%;

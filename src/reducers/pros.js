@@ -12,27 +12,11 @@ const Stores = (state, action) => {
 
 export default stores */
 
-import { GIT_LANG, WIN_SIZE, TABLET_SIZE, MODAL_BTN } from "../actions/actionTypes"
+import { GIT_LANG, WIN_SIZE, TABLET_SIZE, MODAL_BTN, TIMELINE } from "../actions/actionTypes"
 
 
 
-const initialState = {
-  winSize: TABLET_SIZE
-}
 
-
-const pro = (state, action) => {
-  switch (action.type) {
-    case GIT_LANG:
-      console.log("Action", action)
-      return {
-        text: action.text,
-        completed: false
-      }
-    default:
-      return state
-  }
-}
 
 const pros = (state = [], action) => {
   switch (action.type) {
@@ -66,5 +50,13 @@ const modal = (state = false, action) => {
       return state
   }
 }
+const timeline = (state = null, action) => {
+  switch (action.type) {
+    case TIMELINE:
+      return action
+    default:
+      return state
+  }
+}
 
-export { pros, wins, modal }
+export { pros, wins, modal, timeline }

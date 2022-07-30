@@ -1,8 +1,7 @@
 import axios from "axios";
-import { GIT_LANG, WIN_SIZE, MODAL_BTN } from "./actionTypes"
+import { GIT_LANG, WIN_SIZE, MODAL_BTN, TIMELINE } from "./actionTypes"
 
 const setWin = (winSize) => {
-  console.log("set", winSize)
   return {
     type: WIN_SIZE,
     winSize
@@ -36,7 +35,15 @@ const getGitInfo = () => {
 };
 
 
+const setTimeline = (text) => {
+  return {
+    type: TIMELINE,
+    timeline: text
+  };
+}
 
 
 
-export { getGitInfo, setWin, setModal };
+
+
+export { getGitInfo, setWin, setModal, setTimeline };
