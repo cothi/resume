@@ -35,10 +35,11 @@ const getGitInfo = () => {
 };
 
 
-const setTimeline = (text) => {
+const setTimeline = (t) => {
   return {
     type: TIMELINE,
-    timeline: text
+    subject: t.timeline,
+    id: t.index,
   };
 }
 

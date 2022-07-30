@@ -50,10 +50,15 @@ const modal = (state = false, action) => {
       return state
   }
 }
-const timeline = (state = null, action) => {
+const timeline = (state = {}, action) => {
+  console.log("action action", action)
   switch (action.type) {
     case TIMELINE:
-      return action
+      console.log(action, "Act")
+      return {
+        subject: action.subject,
+        id: action.id
+      }
     default:
       return state
   }
