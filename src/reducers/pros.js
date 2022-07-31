@@ -12,7 +12,7 @@ const Stores = (state, action) => {
 
 export default stores */
 
-import { GIT_LANG, WIN_SIZE, TABLET_SIZE, MODAL_BTN, TIMELINE } from "../actions/actionTypes"
+import { GIT_LANG, WIN_SIZE, TABLET_SIZE, MODAL_BTN, TIMELINE, PROJECT_TYPE } from "../actions/actionTypes"
 
 
 
@@ -42,19 +42,20 @@ const wins = (state = TABLET_SIZE, action) => {
   }
 }
 
-const modal = (state = false, action) => {
+const modal = (state = {}, action) => {
   switch (action.type) {
     case MODAL_BTN:
-      return action
+      return {
+        modalType: action.modalType,
+        open: action.open
+      }
     default:
       return state
   }
 }
 const timeline = (state = {}, action) => {
-  console.log("action action", action)
   switch (action.type) {
     case TIMELINE:
-      console.log(action, "Act")
       return {
         subject: action.subject,
         id: action.id
@@ -63,5 +64,20 @@ const timeline = (state = {}, action) => {
       return state
   }
 }
+const project = (state = {
+  pType: "all",
+  name: null
+}, action) => {
+  switch (action.type) {
+    case PROJECT_TYPE:
+      return {
+        pType: action.pType,
+        name: action.name,
+        getData: action.getData
+      }
+    default:
+      return state
+  }
+}
 
-export { pros, wins, modal, timeline }
+export { pros, wins, modal, timeline, project }

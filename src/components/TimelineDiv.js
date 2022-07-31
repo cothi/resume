@@ -20,7 +20,12 @@ export default function TimelineDiv({ state, dispatch, props, index }) {
               timeline: props,
               index: id - 1
             }))
-            dispatch(setModal(true))
+            dispatch(setModal(
+              {
+                modalType: "timeline",
+                open: true
+              }
+            ))
           }}>
             <div className={styles.ContentLeft}>
               <div className={styles.Title}>

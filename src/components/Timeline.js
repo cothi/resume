@@ -15,16 +15,12 @@ import { VscReferences } from "react-icons/vsc";
 
 
 
-Modal.setAppElement("div");
 export default function Timeline({ dispatch, states, }) {
 
   var test = []
   Object.keys(timelineData).map((v, i) => {
     test.push(v)
   })
-
-
-
 
 
   return (
@@ -47,90 +43,90 @@ export default function Timeline({ dispatch, states, }) {
 
       }
       {
-        states.timeline.subject == null ? null :
-          <Modal isOpen={states.modal.open}>
-            <div onClick={() => dispatch(setModal(false))} className={styles.ModalCloseMain}>
-              <GoX className={styles.ModalClose} />
-            </div>
-            <div className={states.wins != PC_SIZE ? styles.ModalMainMobile : styles.ModalMain}>
-              <div className={states.wins != PC_SIZE ? styles.aliceCarouselMobile : styles.aliceCarousel} >
-                <AliceCarousel autoPlay autoPlayInterval="3000" >
-                  {
-                    !states.timeline.subject || states.timeline.subject.images ?
-                      <div>
-                        no image
-                      </div>
-                      :
-                      timelineData[states.timeline.subject][states.timeline.id]["images"].map((v, i) => {
-                        return (
-                          <div className={styles.ModalSliderMain} key={i}>
-                            <img src={v} style={{
-                              width: window.innerWidth / 3,
-                              height: window.innerHeight / 3
-                            }} className={styles.ModalSliderImg} />
-                          </div>
-                        )
-                      })
-                  }
-
-                </AliceCarousel>
+        /*   states.timeline.subject == null ? null :
+            <Modal isOpen={states.modal.open}>
+              <div onClick={() => dispatch(setModal(false))} className={styles.ModalCloseMain}>
+                <GoX className={styles.ModalClose} />
               </div>
-              <div className={states.wins != PC_SIZE ? styles.ModalContentMainMobile : styles.ModalContentMain}>
-                <div>
-                  <div className={styles.ModalHeader}>
-                    <MdDescription />    설명
-                  </div>
-                  <div className={styles.ModalContentOne}>
-                    <div className={styles.ModalTitle}>
-                      # 요약
-                    </div>
-                    <div className={styles.ModalContent}>
-                      {timelineData[states.timeline.subject][states.timeline.id]["detail"]}
-                    </div>
-                  </div>
-                  <div className={styles.ModalContentOne}>
-                    <div className={styles.ModalTitle}>
-                      <MdToday /> 날짜
-                    </div>
-                    <div className={styles.ModalContent}>
-                      {timelineData[states.timeline.subject][states.timeline.id]["date"]}
-                    </div>
-                  </div>
-                  <div className={styles.ModalContentOne}>
-                    <div className={styles.ModalTitle}>
-                      <MdTag /> 태그
-                    </div>
-                    <div className={styles.ModalContentStackMain}>
-                      {timelineData[states.timeline.subject][states.timeline.id]["tags"].map((v, i) => {
-                        return (<div className={styles.ModalContentStack} key={i}>
-                          {v}
+              <div className={states.wins != PC_SIZE ? styles.ModalMainMobile : styles.ModalMain}>
+                <div className={states.wins != PC_SIZE ? styles.aliceCarouselMobile : styles.aliceCarousel} >
+                  <AliceCarousel autoPlay autoPlayInterval="3000" >
+                    {
+                      !states.timeline.subject || states.timeline.subject.images ?
+                        <div>
+                          no image
                         </div>
-                        )
-                      })}
-
-                    </div>
-                  </div>
-                  <div className={styles.ModalContentOne}>
-                    <div className={styles.ModalTitle}>
-                      <VscReferences /> 참고
-                    </div>
-                    <div className={styles.ModalContent}>
-                      {
-                        timelineData[states.timeline.subject][states.timeline.id]["reference"].map((v, i) => {
+                        :
+                        timelineData[states.timeline.subject][states.timeline.id]["images"].map((v, i) => {
                           return (
-                            <div>
-                              {i + 1}. {v}
+                            <div className={styles.ModalSliderMain} key={i}>
+                              <img src={v} style={states.wins != PC_SIZE ? { width: "95%", height: "50%" } : {
+                                width: window.innerWidth / 3,
+                                height: window.innerHeight / 3
+                              }} className={styles.ModalSliderImg} />
                             </div>
                           )
+                        })
+                    }
+  
+                  </AliceCarousel>
+                </div>
+                <div className={states.wins != PC_SIZE ? styles.ModalContentMainMobile : styles.ModalContentMain}>
+                  <div>
+                    <div className={styles.ModalHeader}>
+                      <MdDescription />    설명
+                    </div>
+                    <div className={styles.ModalContentOne}>
+                      <div className={styles.ModalTitle}>
+                        # 요약
+                      </div>
+                      <div className={styles.ModalContent}>
+                        {timelineData[states.timeline.subject][states.timeline.id]["detail"]}
+                      </div>
+                    </div>
+                    <div className={styles.ModalContentOne}>
+                      <div className={styles.ModalTitle}>
+                        <MdToday /> 날짜
+                      </div>
+                      <div className={styles.ModalContent}>
+                        {timelineData[states.timeline.subject][states.timeline.id]["date"]}
+                      </div>
+                    </div>
+                    <div className={styles.ModalContentOne}>
+                      <div className={styles.ModalTitle}>
+                        <MdTag /> 태그
+                      </div>
+                      <div className={styles.ModalContentStackMain}>
+                        {timelineData[states.timeline.subject][states.timeline.id]["tags"].map((v, i) => {
+                          return (<div className={styles.ModalContentStack} key={i}>
+                            {v}
+                          </div>
+                          )
                         })}
+  
+                      </div>
+                    </div>
+                    <div className={styles.ModalContentOne}>
+                      <div className={styles.ModalTitle}>
+                        <VscReferences /> 참고
+                      </div>
+                      <div className={styles.ModalContent}>
+                        {
+                          timelineData[states.timeline.subject][states.timeline.id]["reference"].map((v, i) => {
+                            return (
+                              <div>
+                                {i + 1}. {v}
+                              </div>
+                            )
+                          })}
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-
-          </Modal>
-
+  
+            </Modal>
+   */
       }
     </ >
   )

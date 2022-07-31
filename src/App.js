@@ -7,6 +7,7 @@ import { getGitInfo, setWin } from "./actions/index"
 import { MOBILE_SIZE, PC_SIZE, TABLET_SIZE } from "./actions/actionTypes"
 import styles from "./App.module.css"
 import { connect } from "react-redux"
+import ModalCom from "./containers/ModalCom"
 
 
 
@@ -34,19 +35,22 @@ function App({ dispatch, winSize }) {
   }, [])
 
   return (
-    <div className={styles.App}>
-      {
-        winSize == PC_SIZE ?
-          <>
-            <Sidebar />
-            <Main />
-          </>
-          :
-          <>
-            < Main />
-          </>
-      }
-    </div >
+    <>
+      <ModalCom />
+      <div className={styles.App}>
+        {
+          winSize == PC_SIZE ?
+            <>
+              <Sidebar />
+              <Main />
+            </>
+            :
+            <>
+              < Main />
+            </>
+        }
+      </div >
+    </>
   );
 }
 

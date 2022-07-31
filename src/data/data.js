@@ -284,7 +284,7 @@ const timelineData = {
         "https://github.com/cothi/resume/blob/main/public/assets/codestates.jpeg?raw=true"
       ],
       tags: [
-        "web3", "blockchain", "0x"
+        "web3", "blockchain", "0x", "팀플"
       ]
     }
   ],
@@ -363,7 +363,7 @@ const timelineData = {
       order: "제주특별자치도 주최",
       subject: "10km 코스 참가",
       detail: "제주국제 관광마라톤 10km 참가",
-      reference: [""],
+      reference: ["https://jejumarathon.com/"],
       images: [
         "https://github.com/cothi/resume/blob/main/public/assets/2022_mara_tour.jpeg?raw=true",
       ],

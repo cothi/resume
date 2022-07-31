@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.ModalSliderMain {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.ModalSliderMain > img {
+}
+.ModalCloseMain {
+  display: flex;
+  justify-content: flex-end;
+  height: 8%;
+}
+.ModalClose {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+
+.ModalMain {
+  width: 100%;
+  color: #555555;
+  display: flex;
+  justify-content: center;
+}
+
+.ModalMainMobile {
+  color: #555555;
+  justify-content: center;
+}
+
+
+
+.ModalHeader {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 24px;
+  padding: 0 0 10% 0;
+  display: flex;
+  align-items: center;
+
+}
+
+.ModalContentMain {
+  width: 40%;
+}
+.aliceCarousel {
+  width: 50%;
+}
+
+
+
+.ModalContentMainMobile {
+  width: 95%;
+}
+
+.aliceCarouselMobile {
+  width: 95%;
+}
+
+.ModalContentOne {
+  padding: 0 0 10% 0;
+}
+
+.ModalTitle {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 20px;
+  padding: 0 0 2% 0;
+  display: flex;
+  align-items: center;
+}
+.ModalContent {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 14px;
+}
+.ModalContentStackMain{
+  display: flex;
+  flex-wrap: wrap;
+}
+.ModalContentStack{
+  padding: 1%;
+  margin: 1%;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 5px;
+  border: 0.5px solid #555555;
+}

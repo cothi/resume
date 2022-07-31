@@ -3,7 +3,6 @@ import styles from "./Gauge.module.css"
 export default function Gauge({ title, percentage }) {
 
   percentage = percentage.toFixed(1);
-
   if (title == "HTML" || title == "null" || title == "Pug") {
     return (
       <>

@@ -1,5 +1,5 @@
 import axios from "axios";
-import { GIT_LANG, WIN_SIZE, MODAL_BTN, TIMELINE } from "./actionTypes"
+import { GIT_LANG, WIN_SIZE, MODAL_BTN, TIMELINE, PROJECT_TYPE } from "./actionTypes"
 
 const setWin = (winSize) => {
   return {
@@ -17,9 +17,11 @@ const setLang = (text) => {
 };
 
 const setModal = (e) => {
+
   return {
     type: MODAL_BTN,
-    open: e
+    modalType: e.modalType,
+    open: e.open
   };
 }
 
@@ -28,7 +30,6 @@ const getGitInfo = () => {
     axios.get("https://api.github.com/users/cothi/repos")
       .then(res => {
         const git_info = res.data;
-        console.log("before", git_info)
         dispatch(setLang(git_info))
       })
   }
@@ -45,6 +46,15 @@ const setTimeline = (t) => {
 
 
 
+const setProject = (t) => {
+  return {
+    type: PROJECT_TYPE,
+    pType: t.pType,
+    name: t.name,
+    getData: t.getData
+  }
+}
 
 
-export { getGitInfo, setWin, setModal, setTimeline };
+
+export { getGitInfo, setWin, setModal, setTimeline, setProject };
