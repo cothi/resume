@@ -13,9 +13,14 @@ import timelineData from "../data/data"
 import projectsData from "../data/project"
 
 
-
+const customStyles = {
+  content: {
+    overflow: "hidden",
+  },
+};
 
 Modal.setAppElement("div");
+Modal.defaultStyles.content.overflowY = 'hidden';
 
 export default function ModalCom({ dispatch, states }) {
   return (
@@ -23,7 +28,7 @@ export default function ModalCom({ dispatch, states }) {
       {
         states.modal.modalType == "timeline" ?
           states.timeline.subject == null ? null :
-            <Modal isOpen={states.modal.open}>
+            <Modal isOpen={states.modal.open} style={customStyles}>
               <div onClick={() => dispatch(setModal(false))} className={styles.ModalCloseMain}>
                 <GoX className={styles.ModalClose} />
               </div>

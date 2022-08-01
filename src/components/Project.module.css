@@ -39,21 +39,25 @@
 .ProjectTableHeader {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
+  font-size: 14px;
   background-color: #F5F9FF;
   padding: 1%;
   border-radius: 10px 10px 0 0;
   display: grid;
   grid-template-columns:25% 12% 12% 40% 10%;
+  word-wrap: break-word;
 }
 
 .ProjectTableHeaderMobile {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
+  font-size: 14px;
   background-color: #F5F9FF;
   padding: 1%;
   border-radius: 10px 10px 0 0;
   display: grid;
   grid-template-columns:35% 15% 60%;
+  word-wrap: break-word;
 }
 
 
@@ -64,6 +68,8 @@
   padding: 0 0 1% 0;
 }
 .ProjectTypeHeaderText {
+  font-size: 14px;
+  word-wrap: break-word;
   cursor: pointer;
   padding: 0 2% 0 0;
 }
@@ -72,6 +78,8 @@
   color: #000;
   cursor: pointer;
   padding: 0 2% 0 0;
+  font-size: 14px;
+  word-wrap: break-word;
 }
 
 .ProjectTableContent {
