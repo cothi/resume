@@ -116,10 +116,10 @@ const projectsData = {
     ],
     id: 1,
   },
-  reactNativeTest: {
+  react_native_clone_challenges: {
     type: "clone challenge",
     status: "진행중",
-    feel: "react로 개발을 진행했었고,  크로스 플랫폼이라 휴대폰 앱을 만들기 편할 것 같아서 react native를 시작한 계기가 되었고, 먼저 클론 코딩 첼린지로 시작했다. 먼저 날씨 api, todo 앱을 만들어보았는데, 웹을 만드는 것같아 편하고, expo를 이용하니 따로 연결없이 폰에서 빌드를 진행해준다. 앱에 대한 자신감이 더욱 생기게 되었다.",
+    feel: "react로 개발을 진행했었고,  크로스 플랫폼이라 휴대폰 앱을 만들기 편할 것 같아서 react native를 시작한 계기가 되었고, 먼저 클론 코딩 첼린지로 시작했다. 먼저 날씨 api, todo 앱을 만들어보았는데, 웹을 만드는 것같아 편하고, expo를 이용하니 따로 연결없이 폰에서 빌드를 진행해준다. 도구 덕분인지 앱에 대한 자신감이 더욱 생기게 되었다. 앞으로 더욱 더 많은 챌린지를 도전할 생각이다.",
     reference: [
     ],
     images: [
