@@ -124,7 +124,9 @@ const timelineData = {
       order: "한국생산성본부 (KPC)",
       subject: "GTQ(그래픽기술자격 2급)",
       details: "포토샵을 다루는 근간 기술을 다룸",
-      reference: [],
+      reference: [
+        "https://license.kpc.or.kr/nasec/qlfint/qlfint/selectGtqinfomg.do"
+      ],
       images: [
         "https://github.com/cothi/resume/blob/main/public/assets/gtq.jpeg?raw=true",
       ],
@@ -265,13 +267,15 @@ const timelineData = {
       order: "과학기술정보통신부가 주최하고 한국인터넷진흥원이주관하는 K- Shield Jr",
       subject: "보안사고 분석대응 과정",
       detail: "보안관제, 침해사고 및 안성코드 분석, 보안 솔루션 개발 분야",
-      reference: [],
+      reference: [
+        "http://kshieldjr.org/hr/home",
+      ],
 
       images: [
         "https://github.com/cothi/resume/blob/main/public/assets/k-shieldjr.jpeg?raw=true"
       ],
       tags: [
-        "security"
+        "security", "project"
       ]
     },
     {
