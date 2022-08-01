@@ -246,7 +246,7 @@ export default function ModalCom({ dispatch, states }) {
                             <VscReferences /> 참고
                           </div>
                           <div className={styles.ModalContent}>
-                            1. {states.project.getData.v.html_url}
+                            (1){states.project.getData.v.html_url}
                             {
                               projectsData[states.project.name]["reference"].map((v, i) => {
                                 return (
