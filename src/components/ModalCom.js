@@ -12,14 +12,11 @@ import timelineData from "../data/data"
 import projectsData from "../data/project"
 
 
-const customStyles = {
-  content: {
-    overflow: "hidden",
-  },
-};
+
 
 Modal.setAppElement("div");
 Modal.defaultStyles.content.overflowY = 'hidden';
+Modal.defaultStyles.content.padding = "2%";
 
 export default function ModalCom({ dispatch, states }) {
   return (
@@ -27,26 +24,45 @@ export default function ModalCom({ dispatch, states }) {
       {
         states.modal.modalType === "timeline" ?
           states.timeline.subject === null ? null :
-            <Modal isOpen={states.modal.open} style={customStyles}>
-              <div onClick={() => dispatch(setModal(false))} className={styles.ModalCloseMain}>
-                <GoX className={styles.ModalClose} />
-              </div>
+            <Modal isOpen={states.modal.open} >
+
+              {
+                states.wins === PC_SIZE ?
+                  <div onClick={() => dispatch(setModal(false))} className={styles.ModalCloseMain}>
+                    <GoX className={styles.ModalClose} />
+                  </div>
+                  :
+                  null
+              }
+
+
               <div className={states.wins !== PC_SIZE ? styles.ModalMainMobile : styles.ModalMain}>
+                {
+                  states.wins !== PC_SIZE ?
+                    <div onClick={() => dispatch(setModal(false))} className={styles.ModalCloseMain}>
+                      <GoX className={styles.ModalClose} />
+                    </div>
+                    :
+                    null
+                }
                 <div className={states.wins !== PC_SIZE ? styles.aliceCarouselMobile : styles.aliceCarousel} >
-                  <AliceCarousel autoPlay autoPlayInterval="3000" >
+
+                  <AliceCarousel disableButtonsControls autoHeight={false} animationDuration={2000} autoPlay={3000} mouseTracking >
                     {
-                      !states.timeline.subject || states.timeline.subject.images ?
-                        <div>
+                      !states.timeline.subject || timelineData[states.timeline.subject][states.timeline.id]["images"].length == 0 ?
+                        <div className={styles.ModalSliderMain}>
                           no image
                         </div>
                         :
                         timelineData[states.timeline.subject][states.timeline.id]["images"].map((v, i) => {
                           return (
                             <div className={styles.ModalSliderMain} key={i}>
-                              <img src={v} style={states.wins !== PC_SIZE ? { width: "95%", height: "50%" } : {
-                                width: window.innerWidth / 3,
-                                height: window.innerHeight / 3
+                              <img src={v} style={states.wins !== PC_SIZE ? { width: window.innerWidth / 1.5, height: window.innerHeight / 3, borderRadius: 10, } : {
+                                width: window.innerWidth / 2.4,
+                                height: window.innerHeight / 3,
+                                borderRadius: 10,
                               }} className={styles.ModalSliderImg} />
+
                             </div>
                           )
                         })
@@ -99,7 +115,7 @@ export default function ModalCom({ dispatch, states }) {
                           timelineData[states.timeline.subject][states.timeline.id]["reference"].map((v, i) => {
                             return (
                               <div key={i}>
-                                {i + 1}. {v}
+                                {`(${i + 1})${v}`}
                               </div>
                             )
                           })}
@@ -113,31 +129,56 @@ export default function ModalCom({ dispatch, states }) {
           :
           <>
             {
-              states.project.name === null || states.project.getData.v === undefined || states.project.getData === null ? null :
+              states.project.name === null || states.project.getData === undefined || states.project.getData.v === null ? null :
                 <Modal isOpen={states.modal.open}>
+                  {
+                    states.wins === PC_SIZE ?
+                      <div onClick={() => dispatch(setModal(false))} className={styles.ModalCloseMain}>
+                        <GoX className={styles.ModalClose} />
+                      </div>
+                      :
+                      null
+                  }
 
-                  <div onClick={() => dispatch(setModal(false))} className={styles.ModalCloseMain}>
-                    <GoX className={styles.ModalClose} />
-                  </div>
 
                   <div className={states.wins !== PC_SIZE ? styles.ModalMainMobile : styles.ModalMain}>
 
+
+                    {
+                      states.wins !== PC_SIZE ?
+                        <div onClick={() => dispatch(setModal(false))} className={styles.ModalCloseMain}>
+                          <GoX className={styles.ModalClose} />
+                        </div>
+                        :
+                        null
+                    }
+
                     <div className={states.wins !== PC_SIZE ? styles.aliceCarouselMobile : styles.aliceCarousel} >
 
-                      <AliceCarousel autoPlay autoPlayInterval="3000" >
+                      <AliceCarousel disableButtonsControls mouseTracking autoHeight={false} animationDuration={1000} autoPlay autoPlayInterval={2000} >
                         {
-                          !states.project.name || !projectsData[states.project.name] ?
-                            <div>
+                          !states.project.name || projectsData[states.project.name]["images"].length === 0 ?
+                            <div className={styles.ModalSliderMain} >
                               no image
                             </div>
                             :
                             projectsData[states.project.name]["images"].map((v, i) => {
                               return (
                                 <div className={styles.ModalSliderMain} key={i}>
-                                  <img src={v} style={states.wins !== PC_SIZE ? { width: "95%", height: "50%" } : {
-                                    width: window.innerWidth / 2.4,
-                                    height: window.innerHeight / 3
-                                  }} className={styles.ModalSliderImg} />
+                                  <img src={v} style={
+                                    states.wins === PC_SIZE ?
+                                      {
+                                        width: window.innerWidth / 2.4,
+                                        height: window.innerHeight / 2.6,
+                                        borderRadius: 10
+                                      }
+                                      :
+                                      {
+                                        width: window.innerWidth / 1.4,
+                                        height: window.innerHeight / 3.4,
+                                        borderRadius: 10
+                                      }
+                                  } className={styles.ModalSliderImg} />
                                 </div>
                               )
                             })
@@ -210,7 +251,7 @@ export default function ModalCom({ dispatch, states }) {
                               projectsData[states.project.name]["reference"].map((v, i) => {
                                 return (
                                   <div key={i}>
-                                    {i + 2}. {v}
+                                    {`(${i + 1})${v}`}
                                   </div>
                                 )
                               })}

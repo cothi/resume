@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Poppins:wght@500&display=swap');
 
 .mainBody {
-  padding: 4% 0 10% 2%;
+  
   height: 90%;
   width: 100%;
+  padding: 4% 0 10% 0%;
 }
 
 .ProjectContainer {
@@ -15,7 +16,7 @@
 }
 
 .ProjectHeaderTitle {
-  padding: 5% 0 5% 0 ;
+  padding: 5% 0 5% 2% ;
   font-family: 'Poppins', sans-serif;
   font-size: 22px;
   font-weight: 600;
@@ -26,7 +27,7 @@
 .ProjectTableMain {
   height: 70%;
   width: 100%;
-  padding: 0 0 ;
+  padding: 0 0 0 0;
 }
 .ProjectContentMain {
   height: 100%;
@@ -68,8 +69,7 @@
   padding: 0 0 1% 0;
 }
 .ProjectTypeHeaderText {
-  font-size: 14px;
-  word-wrap: break-word;
+  font-size: 12px;
   cursor: pointer;
   padding: 0 2% 0 0;
 }
@@ -78,7 +78,7 @@
   color: #000;
   cursor: pointer;
   padding: 0 2% 0 0;
-  font-size: 14px;
+  font-size: 12px;
   word-wrap: break-word;
 }
 
@@ -108,6 +108,11 @@
   align-items: center;
 }
 
+.ProjectTableContentMobile:hover{
+  background-color: rgba(147, 203, 255, 0.2);
+  opacity: .7;
+  cursor: pointer;
+}
 .ProjectTableContent:hover {
   background-color: rgba(147, 203, 255, 0.2);
   opacity: .7;

@@ -2,11 +2,14 @@
 .mainRoot {
   width: 70%;
   height: 100%;
+
+  padding: 1%;
 }
 
 .mainFullRoot {
   width: 100%;
   height: 100%;
+  padding: 1%;
 }
 
 .mainHeader {

@@ -9,14 +9,14 @@
 
 .Stack {
   font-family: 'Poppins';
-  font-weight: 600;
-  font-size: 14px;
-  padding: 3px 2% 3px 2%;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 2px 5px 2px 5px;
   height: 24px;
   margin: 1px;
   color: #fff;
   background-color: #7C99FF;
-  border-radius: 20px;
+  border-radius: 12px;
   display: flex;
   word-wrap: normal;
   text-align: center;

@@ -10,12 +10,12 @@
 .ModalCloseMain {
   display: flex;
   justify-content: flex-end;
-  height: 8%;
+  height: 4%;
 }
 .ModalClose {
   cursor: pointer;
-  width: 50px;
-  height: 50px;
+  width: 26px;
+  height: 26px;
 }
 
 .test {
@@ -23,7 +23,7 @@
 }
 
 .ModalMain {
-  width: 100%;
+  width: 96%;
   height: 100%;
   color: #555555;
   display: flex;
@@ -34,6 +34,8 @@
   color: #555555;
   height: 100%;
   justify-content: center;
+  display: flex;
+  flex-direction: column;
 
 }
 
@@ -69,7 +71,7 @@
 
 .aliceCarouselMobile {
   height: 40%;
-  width: 95%;
+  width: 100%;
 }
 
 .ModalContentOne {
@@ -88,6 +90,7 @@
   font-family: 'Poppins';
   font-weight: 400;
   font-size: 14px;
+  word-wrap: break-word;
 }
 .ModalContentStackMain{
   display: flex;
