@@ -16,8 +16,12 @@ export default function Sidebar() {
           blockchain developer
         </div>
         <div className={styles.sidebarIconBox}>
-          <Icon icon="fa6-brands:github-square" color="#fff" className={styles.sidebarIcon} />
-          <Icon icon="fluent:mail-24-filled" color="#fff" className={styles.sidebarIcon2} />
+          <a href="https://github.com/cothi" target="_blank" rel="noopener noreferrer">
+            <Icon icon="fa6-brands:github-square" color="#fff" className={styles.sidebarIcon} />
+          </a>
+          <a href="mailto:jiundev@gmail.com" key="Email" target="_top" rel="noopener noreferrer" style={{ padding: '0 0 0 15px' }}>
+            <Icon icon="fluent:mail-24-filled" color="#fff" className={styles.sidebarIcon2} />
+          </a>
         </div>
       </div>
     </div>
