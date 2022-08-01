@@ -251,7 +251,7 @@ export default function ModalCom({ dispatch, states }) {
                               projectsData[states.project.name]["reference"].map((v, i) => {
                                 return (
                                   <div key={i}>
-                                    {`(${i + 1})${v}`}
+                                    {`(${i + 2})${v}`}
                                   </div>
                                 )
                               })}
