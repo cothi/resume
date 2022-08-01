@@ -1,5 +1,5 @@
 import styles from "./Main.module.css"
-import Header from "./Header"
+import Header from "../containers/Header"
 import About from "../containers/About"
 import Projects from '../containers/Projects'
 import { Route, Routes } from "react-router-dom";

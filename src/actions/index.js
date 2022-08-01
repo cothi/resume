@@ -1,5 +1,5 @@
 import axios from "axios";
-import { GIT_LANG, WIN_SIZE, MODAL_BTN, TIMELINE, PROJECT_TYPE } from "./actionTypes"
+import { GIT_LANG, WIN_SIZE, MODAL_BTN, TIMELINE, PROJECT_TYPE, LOCATION_TYPE } from "./actionTypes"
 
 const setWin = (winSize) => {
   return {
@@ -55,6 +55,11 @@ const setProject = (t) => {
   }
 }
 
+const setLocation = (t) => {
+  return {
+    type: LOCATION_TYPE,
+    location: t.location
+  }
+}
 
-
-export { getGitInfo, setWin, setModal, setTimeline, setProject };
+export { getGitInfo, setWin, setModal, setTimeline, setProject, setLocation };

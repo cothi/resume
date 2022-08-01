@@ -17,7 +17,7 @@ import projectsData from "../data/project"
 
 Modal.setAppElement("div");
 
-export default function ModalCom({ dispatch, states, type }) {
+export default function ModalCom({ dispatch, states }) {
   return (
     <>
       {

@@ -12,7 +12,7 @@ const Stores = (state, action) => {
 
 export default stores */
 
-import { GIT_LANG, WIN_SIZE, TABLET_SIZE, MODAL_BTN, TIMELINE, PROJECT_TYPE } from "../actions/actionTypes"
+import { GIT_LANG, WIN_SIZE, TABLET_SIZE, MODAL_BTN, TIMELINE, PROJECT_TYPE, LOCATION_TYPE } from "../actions/actionTypes"
 
 
 
@@ -79,5 +79,13 @@ const project = (state = {
       return state
   }
 }
+const location = (state = "about", action) => {
+  switch (action.type) {
+    case LOCATION_TYPE:
+      return action.location
+    default:
+      return state
+  }
+}
 
-export { pros, wins, modal, timeline, project }
+export { pros, wins, modal, timeline, project, location }
