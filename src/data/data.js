@@ -120,7 +120,7 @@ const timelineData = {
   ],
   certificates: [
     {
-      date: "2012-12",
+      date: "2012.12",
       order: "한국생산성본부 (KPC)",
       subject: "GTQ(그래픽기술자격 2급)",
       details: "포토샵을 다루는 근간 기술을 다룸",
@@ -135,7 +135,7 @@ const timelineData = {
       ]
     },
     {
-      date: "2016-01",
+      date: "2016.01",
       order: "microsoft",
       subject: "Microsoft Office Specialist 2007 Master",
       detail: "office 문서를 다룸",
@@ -149,7 +149,7 @@ const timelineData = {
       ]
     },
     {
-      date: "2019-09",
+      date: "2019.09",
       order: "대한상공회의소(KCCI)",
       subject: "컴퓨터 활용능력 1급 (Computer User in the field of Spreadsheet & Database Level - 1)",
       detail: "엑셀, 데이터베이스를 다루는 컴퓨터활용 능력",
@@ -163,7 +163,7 @@ const timelineData = {
       ]
     },
     {
-      date: "2019-10",
+      date: "2019.10",
       order: "한국포렌식학회(우)",
       subject: "디지털포렌식 전문가 2급 필기",
       detail: "현장에서 디지털 증거의 무결성 및 원본성을 확보하는 증거수집자의 능력을 검증",
@@ -191,7 +191,7 @@ const timelineData = {
       ]
     },
     {
-      date: "2020-10",
+      date: "2020.10",
       order: "한국산업인력공단(HRDK)",
       subject: "정보처리기사 필기",
       detail: "소프트웨어 개발 관련 자격증으로, 정보시스템의 생명주기 전반에 걸친 프로젝트 업무를 수행하는 직무로서 계획수립, 분석, 설계, 구현, 시험, 운영, 유지보수 등의 업무를 수행할 수 있는 능력을 검증",
@@ -205,7 +205,7 @@ const timelineData = {
       ]
     },
     {
-      date: "2021-10",
+      date: "2021.10",
       order: "대한상공회의소 (KCCI)",
       subject: "전자상거래운용사",
       detail: "전자상거래에 대한 기초적인 지식과 기능을 가지고 전자상거래관리사의 업무를 보조할 수 있는 자",
@@ -378,35 +378,6 @@ const timelineData = {
   ]
 }
 
-/* const freeDetails = [
-  {
-    do: [
-      "수기로 발주받은 데이터를 구글 문서에 대입 시키는 작업을api, 자동화",
-      "발주받은 데이터를 입력받은 뒤, 자기가 원하는 폼에 맞게 변형을 진행하는 작업, 자동화",
-      "원하는 폼에 맞게 만들어진 데이터를 google docs를 pdf로 변형하는 작업, 자동화",
-    ],
-    tags: [
-      "google apps script", "python", "qt5", "mail-merge", "communication", "speed"
-    ],
-    images: [
-      "https://github.com/cothi/resume/blob/main/public/assets/free_1_1.jpeg?raw=true"
 
-    ],
-  },
-  {
-    do: [
-      "학생 데이터를 엑셀로 저장 및 관리하고, mail-merge를 통해서 word로 폼을 맞춰서 변형 후,   자동화",
-      "학생 데이터 라벨 추가 및 기존 앱 modern UI 업데이트 작업, qt5  -> react "
-    ],
-    tags: [
-      "python", "flask", "electron", "React", "mail-merge", "communication"
-    ],
-    images: [
-      "https://github.com/cothi/resume/blob/main/public/assets/free_2_1.jpeg?raw=true",
-      "https://github.com/cothi/resume/blob/main/public/assets/free_2_2.jpeg?raw=true",
-      "https://github.com/cothi/resume/blob/main/public/assets/free_2_3.jpeg?raw=true"
-    ],
-  }
-] */
 
 export default timelineData;
