@@ -1,7 +1,6 @@
 import styles from "./Project.module.css"
 import stackStyles from "./TeckStack.module.css"
 import { AiOutlineSelect } from "react-icons/ai";
-import axios from "axios";
 import { setModal, setProject } from "../actions/index"
 import { PC_SIZE } from "../actions/actionTypes"
 import projectsData from "../data/project"
@@ -11,7 +10,7 @@ export default function Projects({ dispatch, git }) {
 
 
 
-  if (git.pros[0] == undefined) {
+  if (git.pros[0] === undefined) {
     return (
       <>
         Loading
@@ -31,25 +30,25 @@ export default function Projects({ dispatch, git }) {
           Project
         </div>
         <div className={styles.ProjectTypeHeader}>
-          <div className={git.project.pType == "all" ? styles.ProjectTypeHeaderTextSelected : styles.ProjectTypeHeaderText} onClick={() => { dispatch(setProject({ pType: "all", name: git.project.name })) }}>
+          <div className={git.project.pType === "all" ? styles.ProjectTypeHeaderTextSelected : styles.ProjectTypeHeaderText} onClick={() => { dispatch(setProject({ pType: "all", name: git.project.name })) }}>
             ALL
           </div>
-          <div className={git.project.pType == "open source" ? styles.ProjectTypeHeaderTextSelected : styles.ProjectTypeHeaderText} onClick={() => { dispatch(setProject({ pType: "open source", name: git.project.name })) }}>
+          <div className={git.project.pType === "open source" ? styles.ProjectTypeHeaderTextSelected : styles.ProjectTypeHeaderText} onClick={() => { dispatch(setProject({ pType: "open source", name: git.project.name })) }}>
             OPEN SOURCE PROJECT
           </div>
-          <div className={git.project.pType == "team project" ? styles.ProjectTypeHeaderTextSelected : styles.ProjectTypeHeaderText} onClick={() => { dispatch(setProject({ pType: "team project", name: git.project.name })) }}>
+          <div className={git.project.pType === "team project" ? styles.ProjectTypeHeaderTextSelected : styles.ProjectTypeHeaderText} onClick={() => { dispatch(setProject({ pType: "team project", name: git.project.name })) }}>
             TEAM
           </div>
-          <div className={git.project.pType == "toy project" ? styles.ProjectTypeHeaderTextSelected : styles.ProjectTypeHeaderText} onClick={() => { dispatch(setProject({ pType: "toy project", name: git.project.name })) }}>
+          <div className={git.project.pType === "toy project" ? styles.ProjectTypeHeaderTextSelected : styles.ProjectTypeHeaderText} onClick={() => { dispatch(setProject({ pType: "toy project", name: git.project.name })) }}>
             TOY
           </div>
-          <div className={git.project.pType == "clone challenge" ? styles.ProjectTypeHeaderTextSelected : styles.ProjectTypeHeaderText} onClick={() => { dispatch(setProject({ pType: "clone challenge", name: git.project.name })) }}>
+          <div className={git.project.pType === "clone challenge" ? styles.ProjectTypeHeaderTextSelected : styles.ProjectTypeHeaderText} onClick={() => { dispatch(setProject({ pType: "clone challenge", name: git.project.name })) }}>
             CLON CHALLENGE
           </div>
         </div>
         <div className={styles.ProjectTableMain}>
           {
-            git.wins == PC_SIZE ?
+            git.wins === PC_SIZE ?
               <>
 
                 <div className={styles.ProjectTableHeader}>
@@ -65,12 +64,11 @@ export default function Projects({ dispatch, git }) {
                       let key1 = "git_" + (i + 1);
                       v.name = v.name.replace(".", "_");
                       v.name = v.name.replaceAll("-", "_");
-                      console.log(v.name)
 
-                      if (v.folk == true && projectsData[v.name] == undefined || projectsData[v.name] == undefined) {
+                      if (v.folk === true && projectsData[v.name] === undefined || projectsData[v.name] === undefined) {
                         return null;
                       }
-                      if (git.project.pType != "all" && git.project.pType != projectsData[v.name].type) {
+                      if (git.project.pType !== "all" && git.project.pType !== projectsData[v.name].type) {
                         return null;
                       }
                       return (
@@ -129,10 +127,10 @@ export default function Projects({ dispatch, git }) {
                       v.name = v.name.replaceAll("-", "_");
                       console.log(v.name)
 
-                      if (v.folk == true && projectsData[v.name] == undefined || projectsData[v.name] == undefined) {
+                      if (v.folk === true && projectsData[v.name] === undefined || projectsData[v.name] === undefined) {
                         return null;
                       }
-                      if (git.project.pType != "all" && git.project.pType != projectsData[v.name].type) {
+                      if (git.project.pType !== "all" && git.project.pType !== projectsData[v.name].type) {
                         return null;
                       }
                       return (

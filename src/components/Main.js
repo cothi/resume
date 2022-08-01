@@ -8,7 +8,7 @@ import { PC_SIZE } from "../actions/actionTypes"
 
 export default function Main({ winSize }) {
   return (
-    <div className={winSize == PC_SIZE ? styles.mainRoot : styles.mainFullRoot}>
+    <div className={winSize === PC_SIZE ? styles.mainRoot : styles.mainFullRoot}>
       <div className={styles.mainHeader}>
         <div className={styles.mainHeaderItem}>
           <Header />

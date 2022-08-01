@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Poppins:wght@500&display=swap');
 
 .mainBody {
-  padding: 4% 0 0 2%;
-  height: 100%;
+  padding: 4% 0 10% 2%;
+  height: 90%;
   width: 100%;
 }
 
@@ -26,7 +26,7 @@
 .ProjectTableMain {
   height: 70%;
   width: 100%;
-  padding: 0 0;
+  padding: 0 0 ;
 }
 .ProjectContentMain {
   height: 100%;
@@ -51,12 +51,12 @@
 .ProjectTableHeaderMobile {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   background-color: #F5F9FF;
   padding: 1%;
   border-radius: 10px 10px 0 0;
   display: grid;
-  grid-template-columns:35% 15% 60%;
+  grid-template-columns:35% 15% 50%;
   word-wrap: break-word;
 }
 
@@ -97,7 +97,7 @@
 
 .ProjectTableContentMobile{
   display: grid;
-  grid-template-columns:35% 15% 60%;
+  grid-template-columns:35% 15% 50%;
 
   font-family: 'Poppins', sans-serif;
   font-size: 15px;

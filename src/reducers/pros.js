@@ -33,7 +33,6 @@ const pros = (state = [], action) => {
 const wins = (state = TABLET_SIZE, action) => {
   switch (action.type) {
     case WIN_SIZE:
-      console.log(state);
       return action.winSize
 
 

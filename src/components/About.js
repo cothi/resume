@@ -7,9 +7,9 @@ import { MOBILE_SIZE } from "../actions/actionTypes"
 
 export default function About({ winSize }) {
   return (
-    <div className={winSize == MOBILE_SIZE ? styles.mainMobileBody : styles.mainBody}>
+    <div className={winSize === MOBILE_SIZE ? styles.mainMobileBody : styles.mainBody}>
       {
-        winSize == MOBILE_SIZE ?
+        winSize === MOBILE_SIZE ?
           <>
             <div className={styles.mainBodyMobileRight}>
               <div className={styles.mainBodyMobileHeader}>

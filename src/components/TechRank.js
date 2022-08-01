@@ -1,26 +1,18 @@
 import Gauge from "./Gauge"
-import styles from "./TechRank.module.css"
 
 export default function TechRank({ git }) {
 
 
-  if (git.pros.length == 0) {
+  if (git.pros.length === 0) {
     return (
       <>
         Loading
       </>
     )
   }
-
-  // 가져온 값
-  // console.log("git, ", git.pros)
-
   const test = git.pros[0].text;
   var rate = {}
   var calcu = {}
-
-  // console.log(test, ",", test.length)
-
 
   test.map((v) => {
     if (!rate[v.language]) {

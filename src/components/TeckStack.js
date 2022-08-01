@@ -1,7 +1,7 @@
 import styles from "./TeckStack.module.css"
 export default function TeckStack({ git }) {
 
-  if (git == undefined) {
+  if (git === undefined) {
     return (
       <>
         Loading

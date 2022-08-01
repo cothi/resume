@@ -3,9 +3,8 @@ import Modal from 'react-modal';
 import styles from "./ModalCom.module.css"
 import { GoX } from "react-icons/go";
 import { setModal } from "../actions/index"
-import { MdDescription, MdToday, MdStackedBarChart, MdTag, MdSummarize } from "react-icons/md";
+import { MdDescription, MdToday, MdTag } from "react-icons/md";
 import { VscReferences } from "react-icons/vsc";
-import { HiDocumentText } from "react-icons/hi";
 
 import AliceCarousel from 'react-alice-carousel';
 import { PC_SIZE } from "../actions/actionTypes"
@@ -26,14 +25,14 @@ export default function ModalCom({ dispatch, states }) {
   return (
     <>
       {
-        states.modal.modalType == "timeline" ?
-          states.timeline.subject == null ? null :
+        states.modal.modalType === "timeline" ?
+          states.timeline.subject === null ? null :
             <Modal isOpen={states.modal.open} style={customStyles}>
               <div onClick={() => dispatch(setModal(false))} className={styles.ModalCloseMain}>
                 <GoX className={styles.ModalClose} />
               </div>
-              <div className={states.wins != PC_SIZE ? styles.ModalMainMobile : styles.ModalMain}>
-                <div className={states.wins != PC_SIZE ? styles.aliceCarouselMobile : styles.aliceCarousel} >
+              <div className={states.wins !== PC_SIZE ? styles.ModalMainMobile : styles.ModalMain}>
+                <div className={states.wins !== PC_SIZE ? styles.aliceCarouselMobile : styles.aliceCarousel} >
                   <AliceCarousel autoPlay autoPlayInterval="3000" >
                     {
                       !states.timeline.subject || states.timeline.subject.images ?
@@ -44,7 +43,7 @@ export default function ModalCom({ dispatch, states }) {
                         timelineData[states.timeline.subject][states.timeline.id]["images"].map((v, i) => {
                           return (
                             <div className={styles.ModalSliderMain} key={i}>
-                              <img src={v} style={states.wins != PC_SIZE ? { width: "95%", height: "50%" } : {
+                              <img src={v} style={states.wins !== PC_SIZE ? { width: "95%", height: "50%" } : {
                                 width: window.innerWidth / 3,
                                 height: window.innerHeight / 3
                               }} className={styles.ModalSliderImg} />
@@ -55,7 +54,7 @@ export default function ModalCom({ dispatch, states }) {
 
                   </AliceCarousel>
                 </div>
-                <div className={states.wins != PC_SIZE ? styles.ModalContentMainMobile : styles.ModalContentMain}>
+                <div className={states.wins !== PC_SIZE ? styles.ModalContentMainMobile : styles.ModalContentMain}>
                   <div>
                     <div className={styles.ModalHeader}>
                       <MdDescription />    설명
@@ -114,16 +113,16 @@ export default function ModalCom({ dispatch, states }) {
           :
           <>
             {
-              states.project.name == null || states.project.getData == null ? null :
+              states.project.name === null || states.project.getData === null ? null :
                 <Modal isOpen={states.modal.open}>
 
                   <div onClick={() => dispatch(setModal(false))} className={styles.ModalCloseMain}>
                     <GoX className={styles.ModalClose} />
                   </div>
 
-                  <div className={states.wins != PC_SIZE ? styles.ModalMainMobile : styles.ModalMain}>
+                  <div className={states.wins !== PC_SIZE ? styles.ModalMainMobile : styles.ModalMain}>
 
-                    <div className={states.wins != PC_SIZE ? styles.aliceCarouselMobile : styles.aliceCarousel} >
+                    <div className={states.wins !== PC_SIZE ? styles.aliceCarouselMobile : styles.aliceCarousel} >
 
                       <AliceCarousel autoPlay autoPlayInterval="3000" >
                         {
@@ -135,7 +134,7 @@ export default function ModalCom({ dispatch, states }) {
                             projectsData[states.project.name]["images"].map((v, i) => {
                               return (
                                 <div className={styles.ModalSliderMain} key={i}>
-                                  <img src={v} style={states.wins != PC_SIZE ? { width: "95%", height: "50%" } : {
+                                  <img src={v} style={states.wins !== PC_SIZE ? { width: "95%", height: "50%" } : {
                                     width: window.innerWidth / 2.4,
                                     height: window.innerHeight / 3
                                   }} className={styles.ModalSliderImg} />
@@ -146,7 +145,7 @@ export default function ModalCom({ dispatch, states }) {
                       </AliceCarousel>
                     </div>
 
-                    <div className={states.wins != PC_SIZE ? styles.ModalContentMainMobile : styles.ModalContentMain}>
+                    <div className={states.wins !== PC_SIZE ? styles.ModalContentMainMobile : styles.ModalContentMain}>
                       <div>
                         <div className={styles.ModalHeader}>
                           <MdDescription />    설명

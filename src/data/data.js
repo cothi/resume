@@ -374,7 +374,7 @@ const timelineData = {
   ]
 }
 
-const freeDetails = [
+/* const freeDetails = [
   {
     do: [
       "수기로 발주받은 데이터를 구글 문서에 대입 시키는 작업을api, 자동화",
@@ -403,6 +403,6 @@ const freeDetails = [
       "https://github.com/cothi/resume/blob/main/public/assets/free_2_3.jpeg?raw=true"
     ],
   }
-]
+] */
 
 export default timelineData;

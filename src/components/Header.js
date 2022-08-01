@@ -7,7 +7,7 @@ export default function Header({ dispatch, states }) {
     <div className={styles.linkContainer}>
       <Link
         className={
-          states.location == "about" ? styles.linkStyleSelected : styles.linkStyle
+          states.location === "about" ? styles.linkStyleSelected : styles.linkStyle
         }
         onClick={
           () => {
@@ -19,7 +19,7 @@ export default function Header({ dispatch, states }) {
       </Link>
       <Link
         className={
-          states.location == "project" ? styles.linkStyleSelected : styles.linkStyle
+          states.location === "project" ? styles.linkStyleSelected : styles.linkStyle
         }
         onClick={
           () => {

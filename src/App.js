@@ -39,7 +39,7 @@ function App({ dispatch, winSize }) {
       <ModalCom />
       <div className={styles.App}>
         {
-          winSize == PC_SIZE ?
+          winSize === PC_SIZE ?
             <>
               <Sidebar />
               <Main />

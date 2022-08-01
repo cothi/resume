@@ -4,7 +4,6 @@ import { setTimeline } from "../actions/index"
 
 
 const mapStackToProps = state => {
-  console.log("rprp", state);
   return {
     states: state
   }
