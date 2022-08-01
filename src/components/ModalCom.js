@@ -113,7 +113,7 @@ export default function ModalCom({ dispatch, states }) {
           :
           <>
             {
-              states.project.name === null || states.project.getData === null ? null :
+              states.project.name === null || states.project.getData.v === undefined || states.project.getData === null ? null :
                 <Modal isOpen={states.modal.open}>
 
                   <div onClick={() => dispatch(setModal(false))} className={styles.ModalCloseMain}>
