@@ -125,7 +125,6 @@ export default function Projects({ dispatch, git }) {
                       let key1 = "git_" + (i + 1);
                       v.name = v.name.replace(".", "_");
                       v.name = v.name.replaceAll("-", "_");
-                      console.log(v.name)
 
                       if (v.folk === true && projectsData[v.name] === undefined || projectsData[v.name] === undefined) {
                         return null;
