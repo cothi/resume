@@ -66,6 +66,8 @@
   color: #555555;
   font-family: 'Poppins', sans-serif;
   display: flex;
+  flex-wrap: wrap;
+
   padding: 0 0 1% 0;
 }
 .ProjectTypeHeaderText {
