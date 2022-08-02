@@ -1,7 +1,18 @@
 import styles from "./Sidebar.module.css"
 import { Icon } from '@iconify/react';
+import { useEffect, useState, useRef } from "react";
 
 export default function Sidebar() {
+  const [count, setCount] = useState(0);
+  const number_ref = useRef(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCount(count + 1);
+      console.log(count);
+    }, 1000);
+    return clearInterval(timer)
+  }, [])
   return (
     <div className={styles.sidebarRoot}>
       <div className={styles.sidebarCore}>
@@ -12,9 +23,22 @@ export default function Sidebar() {
             className={styles.sidebarProfileImg}
           />
         </div>
-        <div className={styles.sidebarPosition} >
-          <div>
-            BLOCKAHIN, FRONTEND
+        <div className={styles.sidebarPositionMain}>
+          <div className={styles.sidebarPosition} >
+            <div>
+              I'm
+            </div>
+            <div className={styles.sidebarFadeoutTextContainer}>
+              <div className={styles.sidebarFadeoutText}>
+                blockchain developer
+              </div>
+              <div className={styles.sidebarFadeoutText}>
+                frontend developer
+              </div>
+              <div className={styles.sidebarFadeoutText}>
+                oriented a sustainable developer
+              </div>
+            </div>
           </div>
         </div>
         <div className={styles.sidebarName} >
