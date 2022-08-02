@@ -124,6 +124,7 @@ const timelineData = {
       images: [
         "https://github.com/cothi/resume/blob/main/public/assets/blockchain_99_award.jpeg?raw=true",
         "https://github.com/cothi/resume/blob/main/public/assets/blockahin_99.jpeg?raw=true",
+        "https://github.com/cothi/resume/blob/main/public/assets/gucc_blockchain.jpeg?raw=true"
       ],
       reference: [
         "https://www.mk.co.kr/news/it/view/2020/02/142651/",
