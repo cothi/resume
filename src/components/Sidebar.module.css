@@ -32,11 +32,21 @@
   border-radius: 40%;
 }
 
-
 .sidebarPosition {
   color: #fff;
   padding: 10%;
   font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+}
+
+
+
+.sidebarName{
+  color: #fff;
+  padding: 10%;
+  font-weight: 700;
+  text-align: center;
 }
 
 

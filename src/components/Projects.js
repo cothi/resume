@@ -4,6 +4,7 @@ import { AiOutlineSelect } from "react-icons/ai";
 import { setModal, setProject } from "../actions/index"
 import { PC_SIZE } from "../actions/actionTypes"
 import projectsData from "../data/project"
+import { Icon } from '@iconify/react';
 
 import "react-alice-carousel/lib/alice-carousel.css";
 export default function Projects({ dispatch, git }) {
@@ -42,7 +43,7 @@ export default function Projects({ dispatch, git }) {
           <div className={git.project.pType === "toy project" ? styles.ProjectTypeHeaderTextSelected : styles.ProjectTypeHeaderText} onClick={() => { dispatch(setProject({ pType: "toy project", name: git.project.name })) }}>
             TOY
           </div>
-          <div className={git.project.pType === "clone challenge" ? styles.ProjectTypeHeaderTextSelected : styles.ProjectTypeHeaderText} onClick={() => { dispatch(setProject({ pType: "clone challenge", name: git.project.name })) }}>
+          <div className={git.project.pType === "clone challenge" ? styles.ProjectTypeHeaderTextSelectedNoneBorder : styles.ProjectTypeHeaderTextNoneBorder} onClick={() => { dispatch(setProject({ pType: "clone challenge", name: git.project.name })) }}>
             CLON CHALLENGE
           </div>
         </div>
@@ -56,7 +57,8 @@ export default function Projects({ dispatch, git }) {
                   <div>TYPE</div>
                   <div>STATUS</div>
                   <div>TOPIC/STACK</div>
-                  <div>MORE</div>
+                  <div>
+                  </div>
                 </div>
                 <div className={styles.ProjectContentMain} >
                   {
@@ -82,7 +84,7 @@ export default function Projects({ dispatch, git }) {
                         }
                         } >
                           <div className={styles.ProjectInnerText}>
-                            <div>
+                            <div className={styles.ProjectNameText}>
                               {v.name}
                             </div>
                             <div className={styles.ProjectInnerTextSup}>
@@ -94,7 +96,7 @@ export default function Projects({ dispatch, git }) {
                           <div className={styles.ProjectStackContainer}>
                             {
                               v.topics.map((v2, index) => {
-                                let key2 = "topics_" + (index + 1)
+                                let key2 = "topics_" + (index + 1);
                                 return (
                                   <div className={stackStyles.Stack} key={key2} >
                                     {v2}
@@ -104,7 +106,7 @@ export default function Projects({ dispatch, git }) {
                             }
                           </div>
                           <div className={styles.ProjectMore}>
-                            <AiOutlineSelect />
+                            <Icon icon="iconoir:google-docs" className={styles.Docs} height="25" color="#5f6368" />
                           </div>
                         </div>
                       )
@@ -143,7 +145,7 @@ export default function Projects({ dispatch, git }) {
                         }
                         } >
                           <div className={styles.ProjectInnerText}>
-                            <div>
+                            <div className={styles.ProjectNameText}>
                               {v.name}
                             </div>
                             <div className={styles.ProjectInnerTextSup}>
@@ -163,6 +165,10 @@ export default function Projects({ dispatch, git }) {
                               })
                             }
                           </div>
+                          <div className={styles.ProjectMore}>
+                            <Icon icon="iconoir:google-docs" className={styles.Docs} height="25" color="#5f6368" />
+                          </div>
+
 
                         </div>
                       )

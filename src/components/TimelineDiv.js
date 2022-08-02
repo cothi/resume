@@ -1,14 +1,18 @@
 import styles from "./Timeline.module.css"
 import timelineData from "../data/data"
 import { setModal, setTimeline } from "../actions/index"
-export default function TimelineDiv({ dispatch, props }) {
+import { Icon } from '@iconify/react';
 
-  const data = timelineData[props]
+
+export default function TimelineDiv({ dispatch, props }) {
+  const data = timelineData[props];
+
+
   return (
     <div>
 
       {
-        data.map((v, id) => (
+        [...data].reverse().map((v, id) => (
           <div className={styles.ContentDivider} key={id++} onClick={() => {
             dispatch(setTimeline({
               timeline: props,
@@ -32,11 +36,16 @@ export default function TimelineDiv({ dispatch, props }) {
             <div className={styles.Divider}>
             </div>
             <div className={styles.ContentRight}>
-              <div className={styles.Title}>
-                {v.subject}
+              <div>
+                <div className={styles.Title}>
+                  {v.subject}
+                </div>
+                <div className={styles.Details}>
+                  {v.detail}
+                </div>
               </div>
-              <div className={styles.Details}>
-                {v.detail}
+              <div className={styles.DocsMain}>
+                <Icon icon="iconoir:google-docs" className={styles.Docs} height="25" color="#5f6368" />
               </div>
             </div>
           </div>

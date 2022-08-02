@@ -4,15 +4,23 @@ export default function Profile() {
     <div className={styles.ProfileDivMain}>
       <div className={styles.ProfileDiv}>
         <div className={styles.ProfileHeader} >
-          Name
+          NAME
         </div>
-        <div className={styles.ProfileContent}>
+        <div className={styles.ProfileContentName}>
           한지웅 (jiung, Han)
         </div>
       </div>
       <div className={styles.ProfileDiv}>
         <div className={styles.ProfileHeader} >
-          E-mail
+          PHONE
+        </div>
+        <div className={styles.ProfileContent}>
+          +82 010 3311 2389
+        </div>
+      </div>
+      <div className={styles.ProfileDiv}>
+        <div className={styles.ProfileHeader} >
+          EMAIL
         </div>
         <div className={styles.ProfileContent}>
           jiungdev@gmail.com
@@ -20,7 +28,7 @@ export default function Profile() {
       </div>
       <div className={styles.ProfileDiv}>
         <div className={styles.ProfileHeader} >
-          Address
+          ADDRESS
         </div>
         <div className={styles.ProfileContent}>
           Jeju-si, Jeju-do, Republic of Korea
@@ -28,10 +36,10 @@ export default function Profile() {
       </div>
       <div className={styles.ProfileDiv}>
         <div className={styles.ProfileHeader} >
-          Position
+          POSITION
         </div>
         <div className={styles.ProfileContent}>
-          Blockchain
+          BLOCKCHAIN, FRONTEND
         </div>
       </div>
     </div>

@@ -5,11 +5,14 @@ img {
   height: 100px;
 }
 
+.TimelineMain {
+  padding: 5% 0 5% 0;
+}
 
 .TimelineTitle {
   font-family: 'Poppins';
   color: #222222;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 800;
   padding: 6% 0 5% 0;
 }
@@ -24,7 +27,7 @@ img {
 
 .TimelineInterText {
   font-family: 'Poppins';
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
   color: #555555;
   padding: 0 0 10% 0;
@@ -35,11 +38,22 @@ img {
   display: grid;
   height: 140px;
   grid-template-columns: 20% 0% 80%;
+  background: rgba(255,255,255,0.5);
+  -webkit-transition: background .5s ease-out;
+  -moz-transition: background .5s ease-out;
+  -o-transition: background .5s ease-out;
+  transition: background .5s ease-out;
+  border-radius: 5px;
+
 }
 
 .Divider {
   width: 0;
   border-right: 1px solid black;
+  -webkit-transition: border .5s ease-out;
+  -moz-transition: border .5s ease-out;
+  -o-transition: border .5s ease-out;
+  transition: border 1s ease-out;
 }
 
 .Divider::before {
@@ -51,18 +65,28 @@ img {
   margin: 4px 0 0 -4px;
   top: 0;
   left: 0;
+  -webkit-transition: border .5s ease-out;
+  -moz-transition: border .5s ease-out;
+  -o-transition: border .5s ease-out;
+  transition: border .5s ease-out;
 }
  
 
 .ContentDivider:hover > .Divider:before {
   width: 0;
-
   border: 5px solid #5566FE;
   box-shadow: 0px 0px 0px 5px rgba(150, 198, 255, 0.25);
 
 }
 
+.ContentDivider:hover  {
+  border-radius: 5px;
+  background: rgba(230,230,230,0.4);
+
+}
+
 .ContentLeft { 
+  padding: 0 2px 2px 2px;
   word-wrap: break-word;
   margin-right: 10%;
 }
@@ -76,21 +100,45 @@ img {
 
 .Order {
   font-family: 'Poppins';
-  font-weight: 300;
+  font-weight: 700;
   color: #a5a6a7;
   font-size: 12px;
 }
 
 .Details {
   font-family: 'Poppins';
+  font-weight: 500;
   font-size: 12px;
   color: #555555;
 }
 
+.DocsMain {
+  display: flex;
+  justify-content: flex-end;
+  opacity: 0;
+
+  -webkit-transition: opacity 0.1s ease-out;
+  -moz-transition: opacity 0.1s ease-out;
+  -o-transition: opacity 0.1s ease-out;
+  transition: opacity 0.1s ease-out;
+}
+
+.Docs {
+  padding: 0 5% 0 0;
+}
+
+.ContentDivider:hover > div > .DocsMain {
+  opacity: 1;
+
+} 
+
 
 .ContentRight {
-  margin-left: 10%;
+  padding: 0 2px 2px 2px;
+  margin-left: 5%;
   word-wrap: break-word;
+  display: grid;
+  grid-template-rows: 75% 20%;
 }
 
 .ModalSliderMain {
@@ -102,6 +150,7 @@ img {
 
 .ModalSliderMain > img {
 }
+
 .ModalCloseMain {
   display: flex;
   justify-content: flex-end;

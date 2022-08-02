@@ -13,8 +13,14 @@ export default function Sidebar() {
           />
         </div>
         <div className={styles.sidebarPosition} >
-          blockchain developer
+          <div>
+            BLOCKAHIN, FRONTEND
+          </div>
         </div>
+        <div className={styles.sidebarName} >
+          Jiung Han
+        </div>
+
         <div className={styles.sidebarIconBox}>
           <a href="https://github.com/cothi" target="_blank" rel="noopener noreferrer">
             <Icon icon="fa6-brands:github-square" color="#fff" className={styles.sidebarIcon} />

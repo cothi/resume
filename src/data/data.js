@@ -51,6 +51,22 @@ const timelineData = {
       id: 2
     },
     {
+      date: "2022.02",
+      order: "blockchain node",
+      subject: "blockchain node validator",
+      detail: "블록체인 노드 검증 운영, 메디블록 - 약 600만개",
+      reference: [
+        "https://www.mintscan.io/medibloc/validators/panaceavaloper1gvsgxrcv4uuqgxas5nq538f7hydg46mjx6lvuu"
+      ],
+      images: [
+        "https://github.com/cothi/resume/blob/main/public/assets/blockchain_node.jpeg?raw=true"
+      ],
+      tags: [
+        "google apps script", "python", "qt5", "mail-merge", "communication", "speed"
+      ],
+      id: 1
+    },
+    {
       date: "2022.04",
       order: "** 쇼핑몰, x3",
       subject: "gogle app script 애플리케이션 추가 기능",
@@ -151,7 +167,7 @@ const timelineData = {
     {
       date: "2019.09",
       order: "대한상공회의소(KCCI)",
-      subject: "컴퓨터 활용능력 1급 (Computer User in the field of Spreadsheet & Database Level - 1)",
+      subject: "컴퓨터 활용능력 1급",
       detail: "엑셀, 데이터베이스를 다루는 컴퓨터활용 능력",
       reference: [],
       images:
@@ -340,7 +356,7 @@ const timelineData = {
       date: "2018.08",
       order: "대한적십자사",
       subject: "적십자사 헌혈 운동 - 은장",
-      detail: "숭고한 인류애의 정신을 발휘하여 적십자 헌혈 운동에 기여",
+      detail: "숭고한 인류애의 정신을 발휘하여 적십자 헌혈 운동에 기여, 헌혈 20회",
       reference: [],
       images: [
         "https://github.com/cothi/resume/blob/main/public/assets/red_cross_s.jpeg?raw=true",
@@ -353,7 +369,7 @@ const timelineData = {
       date: "2020.1",
       order: "대한적십자사",
       subject: "적십자사 헌혈 운동 - 금장",
-      detail: "숭고한 인류애의 정신을 발휘하여 적십자 헌혈 운동에 기여",
+      detail: "숭고한 인류애의 정신을 발휘하여 적십자 헌혈 운동에 기여, 헌혈 50회",
       reference: [],
       images: [
         "https://github.com/cothi/resume/blob/main/public/assets/red_cross_g.jpeg?raw=true",
