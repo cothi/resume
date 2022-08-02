@@ -7,7 +7,6 @@ import { Icon } from '@iconify/react';
 export default function TimelineDiv({ dispatch, props }) {
   const data = [...timelineData[props]].reverse();
 
-  console.log(data);
 
 
   return (
