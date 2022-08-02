@@ -62,9 +62,9 @@ const timelineData = {
         "https://github.com/cothi/resume/blob/main/public/assets/blockchain_node.jpeg?raw=true"
       ],
       tags: [
-        "google apps script", "python", "qt5", "mail-merge", "communication", "speed"
+        "cli", "golang", "communication", "google cloud", "security"
       ],
-      id: 1
+      id: 3
     },
     {
       date: "2022.04",
@@ -80,7 +80,7 @@ const timelineData = {
       tags: [
         "google apps script", "python", "qt5", "mail-merge", "communication", "speed"
       ],
-      id: 1
+      id: 4
     },
     {
       date: "2022.06",
@@ -98,7 +98,7 @@ const timelineData = {
       tags: [
         "python", "flask", "electron", "React", "mail-merge", "communication"
       ],
-      id: 2
+      id: 5
     },
   ],
 

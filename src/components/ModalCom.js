@@ -19,6 +19,10 @@ Modal.defaultStyles.content.overflowY = 'hidden';
 Modal.defaultStyles.content.padding = "2%";
 
 export default function ModalCom({ dispatch, states }) {
+
+  if (states.modal.modalType === "timeline" && states.modal.subject !== null) {
+    timelineData[states.timeline.subject] = timelineData[states.timeline.subject].reverse();
+  }
   return (
     <>
       {

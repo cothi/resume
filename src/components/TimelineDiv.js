@@ -5,14 +5,16 @@ import { Icon } from '@iconify/react';
 
 
 export default function TimelineDiv({ dispatch, props }) {
-  const data = timelineData[props];
+  const data = [...timelineData[props]].reverse();
+
+  console.log(data);
 
 
   return (
     <div>
 
       {
-        [...data].reverse().map((v, id) => (
+        data.map((v, id) => (
           <div className={styles.ContentDivider} key={id++} onClick={() => {
             dispatch(setTimeline({
               timeline: props,
