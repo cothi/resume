@@ -104,6 +104,21 @@ const timelineData = {
 
   award: [
     {
+      date: "2010.04",
+      order: "제주중학교",
+      subject: "교내 과학경진대회(컴퓨터경진) 장려 입상",
+      detail: "트랜드 검색과, 알맞은 정보를 찾아서 데이터 도출",
+      images: [
+        "https://github.com/cothi/resume/blob/main/public/assets/comp_science.jpeg?raw=true"
+      ],
+      reference: [
+
+      ],
+      tags: [
+        "blockchain"
+      ]
+    },
+    {
       date: "2015.12",
       order: "제주지방경찰청장",
       subject: "표창장",
@@ -133,7 +148,8 @@ const timelineData = {
       tags: [
         "blockchain"
       ]
-    }
+    },
+
   ],
   certificates: [
     {
@@ -236,8 +252,6 @@ const timelineData = {
       ]
     },
   ],
-
-
   education: [
     {
       date: "2012.02",
@@ -279,6 +293,7 @@ const timelineData = {
         "BS"
       ]
     },
+
     {
       date: "2021.03",
       order: "과학기술정보통신부가 주최하고 한국인터넷진흥원이주관하는 K- Shield Jr",
@@ -380,6 +395,22 @@ const timelineData = {
       ]
     },
     {
+      date: "2020.09",
+      order: "한국정보화진흥원",
+      subject: "2020년 데이터 크리에이터 캠프",
+      detail: "데이터 가공하여, 멘토링과 AI 기술을 통해서 문제 해결을 위해 다양한 접근 경험",
+      reference: [
+        "http://creator.kbig.kr/"
+      ]
+      ,
+      images: [
+        "https://github.com/cothi/resume/blob/main/public/assets/univ.jpeg?raw=true"
+      ],
+      tags: [
+        "BS"
+      ]
+    },
+    {
       date: "2022.06",
       order: "제주특별자치도 주최",
       subject: "10km 코스 참가",
@@ -394,6 +425,7 @@ const timelineData = {
     },
   ]
 }
+
 
 
 
