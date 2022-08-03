@@ -398,13 +398,13 @@ const timelineData = {
       date: "2020.09",
       order: "한국정보화진흥원",
       subject: "2020년 데이터 크리에이터 캠프",
-      detail: "데이터 가공하여, 멘토링과 AI 기술을 통해서 문제 해결을 위해 다양한 접근 경험",
+      detail: "팀단위로 데이터 가공하여, 멘토링과 AI 기술을 통해서 문제 해결을 위해 다양한 접근 경험",
       reference: [
         "http://creator.kbig.kr/"
       ]
       ,
       images: [
-        "https://github.com/cothi/resume/blob/main/public/assets/univ.jpeg?raw=true"
+        "https://github.com/cothi/resume/blob/main/public/assets/data_creator_camp.jpeg?raw=true"
       ],
       tags: [
         "BS"
