@@ -326,7 +326,7 @@ const timelineData = {
   ],
   interesting: [
     {
-      date: "2015.5",
+      date: "2015.3",
       order: "제주MBC 국제평화마라톤 사무국",
       subject: "하프 코스 참가",
       detail: "제 15회 2015년 mbc 국제평화마라톤 참가",
