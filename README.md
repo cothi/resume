@@ -2,4 +2,4 @@
 
 ## TODO
 
-1 [ ] career time line component
+1 [x] career time line component
