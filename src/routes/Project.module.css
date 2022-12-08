@@ -1,0 +1,271 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Poppins:wght@500&display=swap');
+
+.mainBody {
+  
+  height: 90%;
+  width: 100%;
+  padding: 4% 0 10% 0%;
+}
+
+.ProjectContainer {
+  height: 100%;
+  width: 100%;
+
+  padding: 0 0 10% 0;
+}
+
+.ProjectHeaderTitle {
+  padding: 5% 0 5% 2% ;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #7C99FF;
+}
+
+
+.ProjectTableMain {
+  height: 70%;
+  width: 100%;
+  padding: 0 0 0 0;
+}
+.ProjectContentMain {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+}
+
+.ProjectTableHeader {
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  background-color: #F5F9FF;
+  padding: 1%;
+  border-radius: 10px 10px 0 0;
+  display: grid;
+  grid-template-columns:25% 12% 12% 40% 10%;
+  word-wrap: break-word;
+}
+
+.ProjectTableHeaderMobile {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  background-color: #F5F9FF;
+  padding: 1%;
+  border-radius: 10px 10px 0 0;
+  display: grid;
+  grid-template-columns:35% 15% 50%;
+  word-wrap: break-word;
+}
+
+.ProjectNameText {
+  text-align: left;
+}
+.ProjectTypeHeader {
+  color: #555555;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0 1% 0;
+}
+.ProjectTypeHeaderText {
+  border-right: 1px solid #555555;
+  margin-right: 1%;
+  
+  font-size: 12px;
+  cursor: pointer;
+  padding: 0 1% 0 0;
+}
+
+.ProjectTypeHeaderTextNoneBorder {
+  margin-right: 1%;
+  
+  font-size: 12px;
+  cursor: pointer;
+  padding: 0 1% 0 0;
+  margin-right: 1%;
+}
+
+
+.ProjectTypeHeaderTextSelected {
+  border-right: 1px solid #555555;
+  color: #000;
+  cursor: pointer;
+  padding: 0 1% 0 0;
+  margin-right: 1%;
+  font-size: 12px;
+  word-wrap: break-word;
+}
+
+.ProjectTypeHeaderTextSelectedNoneBorder {
+  color: #000;
+  cursor: pointer;
+  padding: 0 1% 0 0;
+  margin-right: 1%;
+  font-size: 12px;
+  word-wrap: break-word;
+}
+
+
+
+
+.ProjectTableContentMobile{
+  display: grid;
+  grid-template-columns:35% 15% 40% 10%;
+  -webkit-transition: background .5s ease-out;
+  -moz-transition: background .5s ease-out;
+  -o-transition: background .5s ease-out;
+  transition: background .5s ease-out;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 0.8% 0 0.8% 0;
+  border-top: 1px solid #CFE8FF;
+  border-bottom: 1px solid #CFE8FF;
+  align-items: center;
+  text-align: left;
+}
+
+.ProjectTableContentMobile:hover{
+  background-color: rgba(147, 203, 255, 0.2);
+  cursor: pointer;
+}
+.ProjectTableContentMobile:hover > .ProjectMore {
+  opacity: 1;
+}
+
+
+
+
+.ProjectTableContent {
+  display: grid;
+  grid-template-columns:25% 12% 12% 46% 5%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 0.8% 0 0.8% 0;
+  border-top: 1px solid #CFE8FF;
+  border-bottom: 1px solid #CFE8FF;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-transition: background .5s ease-out;
+  -moz-transition: background .5s ease-out;
+  -o-transition: background .5s ease-out;
+  transition: background .5s ease-out;
+}
+
+.ProjectTableContent:hover {
+  background-color: rgba(147, 203, 255, 0.1);
+  cursor: pointer;
+}
+
+
+.ProjectInnerText {
+  padding: 0 0 0 2%;
+  font-family: 'Poppins', sans-serif;
+  word-wrap: break-word;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.ProjectInnerTextSup {
+  text-align: left;
+  color: #555555;
+  font-size: 12px;
+  padding: 0 0 0 2%;
+
+}
+
+.ProjectStackContainer {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-wrap:wrap;
+  padding: 2px 1% 2px 1%;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.ProjectMore {
+  opacity: 0;
+  -webkit-transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+  transition: opacity .5s ease-out;
+}
+
+.ProjectTableContent:hover > .ProjectMore{
+  opacity: 1
+}
+
+.ProjectModalHeader {
+  display: flex;
+  justify-content: flex-end;
+}
+.ModalClose {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.ProjectModalMain {
+  color: #555555;
+  display: flex;
+  width: 100%;
+  height: 90%;
+}
+
+.ProjectModalLeft {
+  width: 60%;
+  height: 100%;
+}
+
+.ProjectModalRight {
+  height: 100%;
+  width: 40%;
+}
+.ProjectPicMain {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.ModalContentTitle {
+  background-color: #000;
+  padding: 20%;
+}
+.test {
+  padding: 20%;
+}
+
+.ModalContentOne {
+
+  font-family: 'Poppins', sans-serif;
+  margin: 0 0 10% 0;
+}
+
+.ModalContentHeader {
+  display: flex;
+  font-size: 24px;
+}
+.ModalContentHeaderText {
+  padding: 0 0 0 1%;
+}
+
+.ModalContentHeader2 {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+
+  font-size: 34px;
+  font-weight: 600;
+  padding: 0 0 10% 0;
+}
+
+

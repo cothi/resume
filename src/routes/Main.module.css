@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Poppins:wght@500&display=swap');
+.mainRoot {
+  width: 70%;
+  height: 100%;
+  padding: 1%;
+}
+
+.mainFullRoot {
+  width: 100%;
+  height: 100%;
+  padding: 1%;
+}
+
+.mainHeader {
+  display: grid;
+  background-color: #fff;
+  height: 5%;
+  width: 100%;
+  grid-template-columns: 60% 40%;
+}
+.mainHeaderTitle {
+  color: #7C99FF;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 21px;
+}
+
+.mainHeaderContent {
+  font-weight: 700;
+  font-size: 15px;
+  padding: 4% 0 2% 0;
+}
+
+.mainBodyHeader {
+  border-bottom: 16px solid #7C99FF;
+}
+
+.mainContentMain{
+  display: grid;
+  grid-template-columns: 52% 48%;
+}
+
+
+.mainBody{
+  background-color: #fff;
+  width: 100%;
+  height:95%; 
+  display: grid;
+  overflow-y: scroll;
+  padding: 5% 0 0 0;
+}
+.mainBodyMobileHeader{
+  padding: 0 0 2% 0;
+  border-bottom: 16px solid #7C99FF;
+}
+.mainMobileBody {
+  background-color: #fff;
+  width: 100%;
+  height:100%; 
+   display: flex;
+   flex-direction: column;
+  /* grid-template-columns: 55% 45%; */
+  overflow-y: scroll;
+}
+
+.mainBodyLeft {
+  padding: 12% 4% 8% 2%;
+  display: grid;
+  grid-template-rows: 5% 95%;
+}
+
+.mainBodyProfileMobile {
+  padding: 5% 0 3% 0;
+
+}
+
+.mainMobileBodyLeft {
+  padding: 12% 4% 8% 4%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.mainBodyMobileRight {
+  padding: 12% 3% 0 4%;
+  /* display: grid;  */
+  /* grid-template-rows: 4% 13% 70%; */
+  display: flex;
+  flex-direction: column;
+}
+
+.mainBodyRight {
+  height: 100%;
+  padding: 12% 3% 0 2%;
+  /* display: grid;  */
+  /* grid-template-rows: 4% 13% 70%; */
+  display: flex;
+  flex-direction: column;
+}
+
+
+.mainBodyTimeLine {
+
+  display: grid;
+  grid-template-rows: 1% 99%;
+}
+
+.mainBodyTimeLineMobile {
+
+  padding:12% 0 2% 0;
+
+  display: grid;
+  grid-template-rows: 1% 99%;
+
+}
+
+
+
+.mainTimeBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.mainTechInterest{
+  padding: 0 0 15% 0;
+  border-bottom: 16px solid #7C99FF;
+}
+
+.mainTechInterestMobile{
+  padding: 10% 0 10% 0;
+  border-bottom: 16px solid #7C99FF;
+
+}
+
+.mainBodyStack{
+  padding: 10% 0 10% 0;
+}
+.mainBodyMobileStack {
+  border-bottom: 16px solid #7C99FF;
+}
+
+.mainLine {
+  height: 0;
+  border: 8px solid #7C99FF;
+}
+
+.linkContainer {
+  display: flex;
+  height: 100%;
+  vertical-align: middle;
+  align-items: center;
+  padding: 0 0 0 0;
+}
+
+.linkStyle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0 10% 0 0;
+  text-decoration: none;
+  color: #555555;
+}
+
+.linkStyleSelected {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0 10% 0 0;
+  text-decoration: none;
+  color: black;
+}

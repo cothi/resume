@@ -1,0 +1,123 @@
+
+.sidebarRoot {
+  background-color: #628EFF;
+  height: 100%;
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sidebarCore {
+  height: 60%;
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebarFadeoutText{
+  position: absolute;
+  word-wrap: break-word;
+  width: 15%;
+  text-align: left;
+  padding: 0 0 0 5px;
+}
+
+
+.sidebarFadeoutText:nth-child(1){
+  opacity: 0;
+  animation: fade 15s infinite;
+
+}
+.sidebarFadeoutText:nth-child(2){
+  opacity: 0;
+  animation-name: fade;
+
+  animation: fade 15s infinite;
+  animation-delay: 6s;
+}
+.sidebarFadeoutText:nth-child(3){
+  opacity: 0;
+  animation: fade 15s infinite;
+  animation-delay: 11s;
+}
+@keyframes fade{
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    30%{
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+
+.sidebarProfileContainer {
+  width: 50%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebarProfileImg {
+  background-color: white;
+  border-radius: 40%;
+}
+
+.sidebarPosition {
+  width: 90%;
+  padding: 10% 0 0 0;
+  display: grid;
+  grid-template-columns: 12% 50%;
+  justify-content: center;
+  word-wrap: break-word;
+
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+}
+.sidebarPositionMain {
+  width: 100%;
+  padding: 0 0 10% 0;
+  display: flex;
+  justify-content: center;
+  
+}
+.sidebarFadeoutTextContainer {
+  width: 100%;
+  text-wrap: break-word;
+}
+
+.sidebarName{
+  color: #fff;
+  padding: 10%;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+
+.sidebarIconBox {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+
+}
+.sidebarIcon {
+  cursor: pointer;
+  height: 100%;
+  width: 25px;
+}
+.sidebarIcon2 {
+  padding: 0 0 0 5%;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+}
