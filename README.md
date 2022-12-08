@@ -4,8 +4,6 @@ this is my resume project, Many developers write their portfolios in Notion. How
 
 In the future, I intend to make it into a module so that anyone can easily create their own portfolio.
 
-
-
 ## start
 
 ```bash
